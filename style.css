@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+  
+}
+.container{
+    max-width:1200px;
+    margin-inline: auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+}
+.logo .logo-left{
+    text-transform: uppercase;
+    font-size: 3.3rem;
+      font-family: "EB Garamond", serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(48,155,101);
+}
+.logo .logo-right{
+ margin-left: 1rem;
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.logo .logo-right #news{
+    border-bottom: 1px solid black;
+}
+.links-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links-menu li{
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding:31px;
+}
+.links-menu li i{
+    color: rgb(48,155,101);
+    width: 19px;
+     font-size:20px;
+}
+.links-menu li a{
+    color: #000;
+    text-decoration: none;
+}
+.links-menu li a:hover{
+    color: rgb(48,155,101);
+}
+#active{
+    color: rgb(48,155,101);
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul li{
+    padding: 31px;
+    list-style: none;
+}
+ul li i{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+ul li  a{
+    color: #000;
+    text-decoration: none;
+}
+ul li button{
+    background-color: RGB(77 178 236);
+    color: #fff;
+    padding:10px;
+    border: none;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.hanbugar{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+header{
+    display: flex;
+     margin:20px 0;
+}
+header h4{
+    color:#309b65;
+}
+header p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+.hero{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    height: 100vh;
+}
+.hero .hero-left img{
+    width: 100%;
+}
+.hero .hero-left h4{
+    color: #309b65;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.hero .hero-left h5{
+    font-size:1.25rem;
+    font-weight: 600;
+    font-family: "EB Garamond", serif;
+}
+.hero .hero-left p{
+    color:rgb(153, 153, 153);
+    font-weight: 400;
+    font-size:1rem;
+    line-height: 18px;
+    margin-bottom: 15px;
+}
+
+.hero .hero-center {
+     grid-column: 2 / span 2;
+           display: grid;
+      grid-template-rows: repeat(2,1fr);
+      gap: 10px;
+   }
+span{
+    color: #309b65;
+}
+.hero .hero-center .hero-info-1{
+    background-color: black;
+    background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)),
+    url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/33-1068x712.jpg")center/cover;
+    width:100%;
+    height:60vh;
+    color: #fff;
+    font-family: "EB Garamond", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    
+}
+.hero .hero-center .hero-info-1 h4{
+    font-size: 2.1875rem;
+    font-weight:800;
+    line-height: 39px;
+}
+.hero .hero-center .hero-info-1  button{
+    width:20%;
+    margin-top:25%;
+    text-transform: uppercase;
+    color: #309b65;
+    padding:6px 3px;
+    font-weight:550;
+    font-size:0.9rem;
+    border: 2px solid grey;
+}
+.hero .hero-center .hero-info-1  p{
+font-size:1rem;
+font-weight:400;
+margin: 10px 0;
+font-family: "Roboto", sans-serif;
+   }
+.hero .hero-center .hero-info-2{
+    background-color: rgb(246, 40, 40);
+    background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)),
+    url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/22-1068x713.jpg")center/cover;;
+    width:100%;
+    height:60vh;
+    font-family: "EB Garamond", serif;
+   color: #fff;
+   padding: 20px;
+}
+.hero .hero-center .hero-info-2 h4{
+    font-size: 2.1875rem;
+    font-weight:800;
+    line-height: 39px;
+
+}
+.hero .hero-center .hero-info-2  button{
+    width:20%;
+    margin-top:25%;
+    text-transform: uppercase;
+    color: #309b65;
+    padding:6px 3px;
+    font-weight:550;
+    font-size:0.9rem;
+    border: 2px solid grey;
+}
+.hero .hero-center .hero-info-2  p{
+font-size:1rem;
+font-weight:400;
+margin: 10px 0;
+font-family: "Roboto", sans-serif;
+   } 
+ .hero-right{
+ display: flex;
+ flex-direction: column;
+ gap:25px;
+}
+.hero-right img{
+    width:45%;
+    height:17vh;
+}
+.hero-right  .hero-right-1{
+    display: flex;
+    gap:14px;
+    font-size:1rem;
+    font-weight: 500;
+}
+.hero-right .sub-hero{
+    display: flex;
+    flex-direction: column;
+}
+.sub-hero p{
+    color: RGB(163 163 163);
+    font-size: 0.75rem;
+
+}
+.sub-hero h5{
+    margin-top:2px;
+}
+.sub-hero h5:hover{
+    color: #309b65;
+}
+ @media(max-width:640px){
+    
+    .menu{
+        display: none;
+    }
+    .hanbugar{
+        display: block;
+              top: 4%;
+        right: .05%;
+    
+        z-index:100;
+        color: #0de065;
+     position: absolute;
+        border-radius: 50%;
+        width: 10%;
+        height: 10%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+       padding: 10px;
+     font-size: 2rem;
+     padding: 30px;
+    }
+    .mobile-menu{
+        display: none;
+    }
+    .mobile-menu[data-visible="false"]{
+        transform: translateX(100%);
+    }
+    .hanbugar i[data-visible="true"]{
+        display: block;
+    }
+    .hanbugar i[data-visible="false"]{
+        display:none;
+    }
+    .logo{
+        padding: 20px;
+    }
+    header{
+        padding: 30px;
+    }
+    .mobile-menu{
+             display: flex;
+        justify-content: center;
+     position:fixed;
+        background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+        url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/38.jpg")center/cover,no-repeat;
+        width:100%;
+        height:100vh;
+         inset: 0 0 0 0;              
+        color: #fff;   
+        transform: translateX(0%);
+        transition: transform ease-out 3s;
+        flex-direction: column;
+    
+    }
+    
+    .mobile-menu {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+    }
+    .mobile-menu a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+        margin: 10px 0;
+        cursor: pointer;
+        
+    }
+    .mobile-menu a i{
+  
+        padding: 10px;
+    }
+    .mobile-menu a button{
+        background-color: RGB(77 178 236);
+        color: #fff;
+        padding:10px;
+        border: none;
+        font-size: 0.75rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .mobile-menu  a:hover{
+        color: rgb(48,155,101);
+
+    }
+    #active{
+        color: rgb(48,155,101);
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+           }
+    .hero{
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 10px;
+    }
+    .hero .hero-left{
+        padding:20px;
+        word-wrap: break-word;
+            }
+    .hero .hero-left img{
+        width: 100%;
+    }
+    .hero .hero-left h4{
+        color: #309b65;
+        font-size: 0.8125rem;
+        font-weight: 700;
+        text-transform: uppercase;
+     
+    }
+    .hero .hero-left h5{
+        font-size:1.25rem;
+        font-weight: 600;
+        font-family: "EB Garamond", serif;
+    }
+    .hero .hero-left p{
+        color:rgb(153, 153, 153);
+        font-weight: 400;
+        font-size:1rem;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+    .hero .hero-center{
+    grid-column:1 / span 1;
+    padding: 20px;
+    }
+    .hero .hero-center .hero-info-1{
+        background-color: black;
+        background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)),
+        url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/33-1068x712.jpg")center/cover;
+        width:100%;
+        height:100vh;
+        color: #fff;
+        font-family: "EB Garamond", serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+               
+    }
+    .hero .hero-center .hero-info-1 h4{
+        font-size: 1.8rem;
+        font-weight:800;
+        line-height:30px;
+        margin-top: 10px;
+    }
+    .hero .hero-center .hero-info-1  button{
+        width:30%;
+        margin-top:30%;
+        text-transform: uppercase;
+        color: #309b65;
+        padding:6px 3px;
+        font-weight:550;
+        font-size:0.9rem;
+        border: 2px solid grey;
+    }
+    .hero .hero-center .hero-info-1  p{
+    font-size:1rem;
+    font-weight:400;
+    margin:20px 0;
+    font-family: "Roboto", sans-serif;
+       }
+  
+       .hero .hero-center .hero-info-2{
+        background-color: rgb(246, 40, 40);
+        background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)),
+        url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/22-1068x713.jpg")center/cover;;
+        width:100%;
+        height:100vh;
+        font-family: "EB Garamond", serif;
+       color: #fff;
+       padding: 20px;
+    }
+    .hero .hero-center .hero-info-2 h4{
+        font-size:1.8rem;
+        font-weight:800;
+        line-height:30px;
+        /* margin-top:100px; */
+    }
+    .hero .hero-center .hero-info-2  button{
+        width:30%;
+        margin-top:45%;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        color: #309b65;
+        padding:6px 3px;
+        font-weight:550;
+        font-size:0.9rem;
+        border: 2px solid grey;
+    }
+    .hero .hero-center .hero-info-2  p{
+    font-size:1rem;
+    font-weight:400;
+    /* margin-top:10px ; */
+    font-family: "Roboto", sans-serif;
+       }
+       .hero-right{
+        display: flex;
+        flex-direction: column;
+        gap:25px;
+        padding: 25px;
+       }
+    } 
+    
+
+
+    
