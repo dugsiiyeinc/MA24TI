@@ -349,9 +349,9 @@ font-size: 0.6875rem;
     
       }
    .insagram-content  .img img{
-    width:70px;
+    width:100px;
     border-radius:60%;
-    height:70px;
+    height:100px;
    }
    .instagram .insagram-content .instagram-info{
  grid-column: 2 /span 2;
@@ -771,7 +771,8 @@ font-family: "EB Garamond", serif;
         padding: 0px 20px;
               }
        .blogs img{
-        width: 100%;
+        width:600px;
+        height:500px;
        }
        .articles{
         display: grid;
@@ -802,29 +803,26 @@ font-family: "EB Garamond", serif;
         height:5vh;
     }
     .articles .article img{
-        width:500px;
-        height:400px;
+        width:580px;
+        height:350px;
         
     }
     .instagram{
         display: grid;
         grid-template-columns:1fr;
         padding: 20px;
+        /* background-color: #0de065; */
+        width:620px;
+        /* height: 700px; */
     }
     .instagram .instagram-1 img{
-        width:150px;
-      height:150px;
+        width:200px;
+      height:200px;
       padding: 20px;
        }
-    .instagram .instagram-2{
-        padding: 20px;
-    }
-    .instagram .instagram-3{
-        padding: 20px;
-    }
-    .insagram-content{
-       margin-top: -10px;
-    }
+     .news-paper-image{
+        width:600px;
+     }
 
     .general-news .general-info{
         display: grid;
@@ -832,6 +830,7 @@ font-family: "EB Garamond", serif;
         gap:20px;
         margin-top:30px;
         padding: 20px;
+        width: 650px;
     }
     .social-media{
         display: grid;
@@ -839,6 +838,7 @@ font-family: "EB Garamond", serif;
         gap:20px;
         margin-top:30px;
             padding: 20px;
+            width: 600px;
     }
     .sections{
         display: grid;
@@ -846,14 +846,16 @@ font-family: "EB Garamond", serif;
         gap: 20px;
         margin-top:35px ;
         padding: 10px;
+        width: 600px;
        }
        .amember{
         margin: 0 10px;
+        width:580px;
        }
        .amember-info{
              display: flex;
         flex-direction: column;
-        
+     
               }
 
        .amember-info button{
