@@ -587,7 +587,7 @@ font-family: "EB Garamond", serif;
     }
     header{
         padding: 30px;
-        width: 650px;
+        width:600px;
     }
     .mobile-menu{
              display: flex;
