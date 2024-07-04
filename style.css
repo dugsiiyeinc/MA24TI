@@ -349,7 +349,7 @@ font-size: 0.6875rem;
     
       }
    .insagram-content  .img img{
-    width: 100%;
+    width: 100vw;
     border-radius:60%;
     height:22vh;
    }
