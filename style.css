@@ -808,9 +808,9 @@ font-family: "EB Garamond", serif;
         padding: 20px;
     }
     .instagram .instagram-1 img{
-        width:40vh;
+        /* width:40vh;
       height:40vh;
-      padding: 20px;
+      padding: 20px; */
     
     }
     .instagram .instagram-2{
@@ -820,7 +820,7 @@ font-family: "EB Garamond", serif;
         padding: 20px;
     }
     .insagram-content{
-       margin-top: -10px;
+       /* margin-top: -10px; */
     }
 
     .general-news .general-info{
