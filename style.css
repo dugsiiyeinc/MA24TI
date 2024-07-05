@@ -555,8 +555,8 @@ font-family: "EB Garamond", serif;
     }
     .hanbugar{
         display: block;
-              top:20px;
-            right: 0;
+              top:30px;
+            right: 10px;
             z-index:100;
         color: #0de065;
      position: absolute;
