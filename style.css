@@ -807,9 +807,7 @@ font-family: "EB Garamond", serif;
         height:5vh;
     }
     .articles .article img{
-        max-width:573px;
-        height:350px;
-        
+     width: 100%;
     }
     .instagram{
         display: grid;
@@ -825,7 +823,7 @@ font-family: "EB Garamond", serif;
       padding: 20px;
        }
      .news-paper-image{
-        max-width:573px;
+           max-width:573px;
      }
 
     .general-news .general-info{
