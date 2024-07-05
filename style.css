@@ -757,6 +757,7 @@ font-family: "EB Garamond", serif;
         flex-direction: column;
         gap:20px;
         padding: 20px;
+        max-width:573px;
        }
        .hero-right img{
            width:170px;
@@ -775,8 +776,7 @@ font-family: "EB Garamond", serif;
         padding: 0px 20px;
               }
        .blogs img{
-        max-width:573px;
-        height:500px;
+        width: 100%;
        }
        .articles{
         display: grid;
@@ -868,316 +868,337 @@ font-family: "EB Garamond", serif;
        }
  
     } 
-    @media screen and (min-width:641px) and (max-width:1024px){
-        
-    .menu{
-        display: none;
-    }
-    .hanbugar{
-        display: block;
-              top: 4%;
-        right: .05%;
-            z-index:100;
-        color: #0de065;
-     position: absolute;
-        border-radius: 50%;
-        width: 10%;
-        height: 10%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-       padding: 10px;
-     font-size: 2rem;
-     padding: 30px;
-    }
-    .mobile-menu{
-        display: none;
-    }
-    .mobile-menu[data-visible="false"]{
-        transform: translateX(100%);
-    }
-    .hanbugar i[data-visible="true"]{
-        display: block;
-    }
-    .hanbugar i[data-visible="false"]{
-        display:none;
-    }
-    .logo{
-        padding: 20px;
-    }
-    header{
-        padding: 30px;
-    }
-    .mobile-menu{
-             display: flex;
-        justify-content: center;
-     position:fixed;
-        background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
-        url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/38.jpg")center/cover,no-repeat;
-        width:100%;
-        height:100vh;
-         inset: 0 0 0 0;              
-        color: #fff;   
-        transform: translateX(0%);
-        transition: transform ease-out 3s;
-        flex-direction: column;
-    
-    }
-    
-    .mobile-menu {
+    @media screen and (min-width:641px) and (max-width:770px){
+
+        .menu{
+            display: none;
+        }
+        .hanbugar{
+            display: block;
+                  top:30px;
+                right:0;
+                z-index:100;
+            color: #0de065;
+         position: absolute;
+            border-radius: 50%;
+            width:20px;
+            height:20px;
          display: flex;
-         flex-direction: column;
          align-items: center;
          justify-content: center;
-    }
-    .mobile-menu a{
-        text-decoration: none;
-        color: #fff;
-        font-size: 1.5rem;
-        margin: 10px 0;
-        cursor: pointer;
-        
-    }
-    .mobile-menu a i{
-  
-        padding: 10px;
-    }
-    .mobile-menu a button{
-        background-color: RGB(77 178 236);
-        color: #fff;
-        padding:10px;
-        border: none;
-        font-size: 0.75rem;
-        font-weight: 500;
-        text-transform: uppercase;
-    }
-    .mobile-menu  a:hover{
-        color: rgb(48,155,101);
-
-    }
-    #active{
-        color: rgb(48,155,101);
-    }
-    header{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-           }
-    .hero{
-        display: grid;
-        grid-template-columns:1fr;
-        gap: 10px;
-    }
-    .hero .hero-left{
-        padding:20px;
-                 }
-    .hero .hero-left img{
-        width: 100%;
-    }
-    .hero .hero-left h4{
-        color: #309b65;
-        font-size: 0.8125rem;
-        font-weight: 700;
-        text-transform: uppercase;
-     
-    }
-    .hero .hero-left h5{
-        font-size:1.25rem;
-        font-weight: 600;
-        font-family: "EB Garamond", serif;
-    }
-    .hero .hero-left p{
-        color:rgb(153, 153, 153);
-        font-weight: 400;
-        font-size:1rem;
-        line-height: 18px;
-        margin-bottom: 15px;
-    }
-    .hero .hero-center{
-    grid-column:1 / span 1;
-    padding: 20px;
-    }
-    .hero .hero-center .hero-info-1{
-        background-color: black;
-        background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)),
-        url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/33-1068x712.jpg")center/cover;
-        width:100%;
-        height:100vh;
-        color: #fff;
-        font-family: "EB Garamond", serif;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 20px;
-               
-    }
-    .hero .hero-center .hero-info-1 h4{
-        font-size: 1.8rem;
-        font-weight:800;
-        line-height:30px;
-        margin-top: 10px;
-    }
-    .hero .hero-center .hero-info-1  button{
-        width:30%;
-        margin-top:30%;
-        text-transform: uppercase;
-        color: #309b65;
-        padding:6px 3px;
-        font-weight:550;
-        font-size:0.9rem;
-        border: 2px solid grey;
-    }
-    .hero .hero-center .hero-info-1  p{
-    font-size:1rem;
-    font-weight:400;
-    margin:20px 0;
-    font-family: "Roboto", sans-serif;
-       }
-  
-       .hero .hero-center .hero-info-2{
-        background-color: rgb(246, 40, 40);
-        background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)),
-        url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/22-1068x713.jpg")center/cover;;
-        width:100%;
-        height:100vh;
-        font-family: "EB Garamond", serif;
-       color: #fff;
-       padding: 20px;
-    }
-    .hero .hero-center .hero-info-2 h4{
-        font-size:1.8rem;
-        font-weight:800;
-        line-height:30px;
+           padding: 10px;
+         font-size:2.5rem;
+         padding: 30px;
+         
         }
-    .hero .hero-center .hero-info-2  button{
-        width:30%;
-         margin-bottom: 10px;
-        text-transform: uppercase;
-        color: #309b65;
-        padding:6px 3px;
-        font-weight:550;
-        font-size:0.9rem;
-        border: 2px solid grey;
-    }
-    .hero .hero-center .hero-info-2  p{
-    font-size:1rem;
-    font-weight:400;
-    font-family: "Roboto", sans-serif;
-       }
-             .hero-right{
-        display: flex;
-        flex-direction: column;
-        gap:20px;
-        padding: 20px;
-       }
-       .hero-right img{
-           width:40%;
-           height:50vh;
-       }
-       .hero-right .sub-hero{
-        display: flex;
-        justify-content: center;
-              flex-direction: column;
-              font-size:1.3rem;
-              font-weight:1000;
-           }
-       .news-paper-image{
-        padding: 0px 20px;
-       }
-      .news-paper-image img{
-        width: 100%;
-      }
-       .blogs{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 0px 20px;
-              }
-       .blogs img{
-        width: 100%;
-       }
-       .articles{
-        display: grid;
-        grid-template-columns:1fr;
-        gap: 10px;
-        padding: 20px;
-    }
-    .articles .article h4{
-        font-size: 1.4125rem;
-        font-weight: 600;
-        font-family: "EB Garamond", serif;
-        margin-top:3%;
-    }
-    .articles .article .articles-profile{
-       display: flex;
-       gap: 7px;
-       align-items: center;
-       margin-top:3%;
-    }
-    .articles .article img{
-        width: 100%;
-        /* height:70vh; */
-    }
-    .instagram{
-        display: grid;
-        grid-template-columns:1fr;
-    }
-    .instagram .instagram-1{
-        padding:10px;
-    }
-   
-    .instagram .insagram-content .instagram-info {
-      margin-left: -40px;
-    }
-    .instagram .instagram-2{
-        padding:0 20px;
-    }
-    .instagram .instagram-3{
-        padding: 20px;
-    }
-    .insagram-content{
-       margin-top: -10px;
-    }
-    .instagram-info{
-        margin: -80px;
-    }
- 
-    .general-news .general-info{
-        display: grid;
-        grid-template-columns:1fr;
-        gap:20px;
-        margin-top:30px;
-        padding:20px;
-    }
-    .social-media{
-        display: grid;
-        grid-template-columns:1fr;
-        gap:20px;
-        margin-top:30px;
-        padding: 20px;
-    }
-    .sections{
-        display: grid;
-        grid-template-columns:1fr;
-        gap: 20px;
-        margin-top:35px ;
-        padding: 10px;
-       }
-       .amember{
-        margin:20px 10px;
-       }
-       .amember-info{
-             display: flex;
-        flex-direction: column;
+        .mobile-menu{
+            display: none;
+        }
+        .mobile-menu[data-visible="false"]{
+            transform: translateX(100%);
+        }
+        .hanbugar i[data-visible="true"]{
+            display: block;
+        }
+        .hanbugar i[data-visible="false"]{
+            display:none;
+        }
+        .logo{
+            padding: 20px;
+            
+        }
+        header{
+            /* padding:20px;
+            max-width:600px;
+            box-sizing: border-box; */
+          
+        }
+        .mobile-menu{
+                 display: flex;
+            justify-content: center;
+         position:fixed;
+            background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+            url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/38.jpg")center/cover,no-repeat;
+            width:100%;
+            height:100vh;
+             inset: 0 0 0 0;              
+            color: #fff;   
+            transform: translateX(0%);
+            transition: transform ease-out 3s;
+            flex-direction: column;
         
-              }
-
-       .amember-info button{
-        margin-inline: 0;
-       }
-    
+        }
+        
+        .mobile-menu {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: center;
+        }
+        .mobile-menu a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 10px 0;
+            cursor: pointer;
+            
+        }
+        .mobile-menu a i{
+        
+            padding: 10px;
+        }
+        .mobile-menu a button{
+            background-color: RGB(77 178 236);
+            color: #fff;
+            padding:10px;
+            border: none;
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        .mobile-menu  a:hover{
+            color: rgb(48,155,101);
+        
+        }
+        header{
+            padding: 20px;
+        }
+        #active{
+            color: rgb(48,155,101);
+        }
+        
+        .hero{
+            display: grid;
+            grid-template-columns:1fr;
+            gap: 10px;
+            
+        }
+        .hero .hero-left{
+            padding:20px;
+                               }
+        .hero .hero-left img{
+            width: 100%;
+        }
+        .hero .hero-left h4{
+            color: #309b65;
+            font-size: 0.8125rem;
+            font-weight: 700;
+            text-transform: uppercase;
+         
+        }
+        .hero .hero-left h5{
+            font-size:1.25rem;
+            font-weight: 600;
+            font-family: "EB Garamond", serif;
+        }
+        .hero .hero-left p{
+            color:rgb(153, 153, 153);
+            font-weight: 400;
+            font-size:1rem;
+            line-height: 18px;
+            margin-bottom: 15px;
+        }
+        .hero .hero-center{
+        grid-column:1 / span 1;
+        padding: 20px;
+        }
+        .hero .hero-center .hero-info-1{
+            background-color: black;
+            background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)),
+            url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/33-1068x712.jpg")center/cover;
+            max-width:1000px;
+            height:500px;
+            color: #fff;
+            font-family: "EB Garamond", serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+                   
+        }
+        .hero .hero-center  div{
+            margin-top:120px;
+        }
+        .hero .hero-center .hero-info-1 h4{
+            font-size: 1.8rem;
+            font-weight:800;
+            line-height:30px;
+            margin-top: 10px;
+        }
+        .hero .hero-center .hero-info-1  button{
+            width:30%;
+            margin-top:30%;
+            text-transform: uppercase;
+            color: #309b65;
+            padding:6px 3px;
+            font-weight:550;
+            font-size:0.9rem;
+            border: 2px solid grey;
+        }
+        .hero .hero-center .hero-info-1  p{
+        font-size:1rem;
+        font-weight:400;
+        margin:20px 0;
+        font-family: "Roboto", sans-serif;
+           }
+        
+           .hero .hero-center .hero-info-2{
+            background-color: rgb(246, 40, 40);
+            background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)),
+            url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/22-1068x713.jpg")center/cover;;
+            max-width:1000px;
+            height:500px;
+            font-family: "EB Garamond", serif;
+           color: #fff;
+           padding: 20px;
+        }
+        .hero .hero-center .hero-info-2 h4{
+            font-size:1.8rem;
+            font-weight:800;
+            line-height:30px;
+            }
+        .hero .hero-center .hero-info-2  button{
+            width:30%;
+             margin-bottom: 10px;
+            text-transform: uppercase;
+            color: #309b65;
+            padding:6px 3px;
+            font-weight:550;
+            font-size:0.9rem;
+            border: 2px solid grey;
+        }
+        .hero .hero-center .hero-info-2  p{
+        font-size:1rem;
+        font-weight:400;
+        font-family: "Roboto", sans-serif;
+           }
+                 .hero-right{
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+            padding: 20px;
+            
+           }
+           .hero-right img{
+               width:300px;
+               height:300px;
+           }
+           .hero-right .sub-hero {
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+            flex-direction: column;
+           }
+           .news-paper-image{
+            padding: 0px 20px;
+           }
+          .news-paper-image img{
+            width: 100%;
+          }
+           .blogs{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 0px 20px;
+                  }
+           .blogs img{
+            max-width:1000px;
+            height:500px;
+           }
+           .articles{
+            display: grid;
+            grid-template-columns:1fr;
+            gap: 10px;
+            padding: 20px;
+        }
+        .articles .article{
+            display: grid;
+            grid-template-columns:1fr;
+            gap: 10px;
+            padding: 20px;
+        }
+        .articles .article h4{
+            font-size: 1.4125rem;
+            font-weight: 600;
+            font-family: "EB Garamond", serif;
+            margin-top:3%;
+        }
+        .articles .article .articles-profile{
+           display: flex;
+           gap: 7px;
+           align-items: center;
+           margin-top:3%;
+        }
+        .articles .article .articles-profile img{
+            width:5vh;
+            height:5vh;
+        }
+        .articles .article img{
+         width: 100%;
+        }
+        .instagram{
+            display: grid;
+            grid-template-columns:1fr;
+            padding: 20px;
+            /* background-color: #0de065; */
+            max-width:1000px;
+            /* height: 700px; */
+        }
+        .instagram .instagram-1 img{
+            width:200px;
+          height:200px;
+          padding: 20px;
+           }
+         .news-paper-image{
+               max-width:1000px;
+         }
+        
+        .general-news .general-info{
+            display: grid;
+            grid-template-columns:1fr;
+            gap:20px;
+            margin-top:30px;
+            padding: 20px;
+            max-width:1000px;
+        }
+        .social-media{
+            display: grid;
+            grid-template-columns:1fr;
+            gap:20px;
+            margin-top:30px;
+                padding: 20px;
+                max-width:1000px;
+        }
+        .sections{
+            display: grid;
+            grid-template-columns:1fr;
+            gap: 20px;
+            margin-top:35px ;
+            padding: 20px;
+            max-width:1000px;
+           }
+           .amember{
+            margin: 0 10px;
+            max-width:1000px;
+            padding:20px;
+            border: none;
+           
+           }
+           .section-1 img{
+            height:200px;
+           }
+           .section-1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           }
+           .amember-info{
+                 display: flex;
+            flex-direction: column;
+         
+                  }
+        
+           .amember-info button{
+            margin-inline: 0;
+           }
     }
-
-
-    
