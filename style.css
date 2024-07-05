@@ -556,7 +556,7 @@ font-family: "EB Garamond", serif;
     .hanbugar{
         display: block;
               top:30px;
-            right:-10%;
+            right:0;
             z-index:100;
         color: #0de065;
      position: absolute;
@@ -655,9 +655,7 @@ font-family: "EB Garamond", serif;
     }
     .hero .hero-left{
         padding:20px;
-        max-width:650px;
-        /* background-color: #0de065; */
-                 }
+                           }
     .hero .hero-left img{
         width: 100%;
     }
@@ -688,7 +686,7 @@ font-family: "EB Garamond", serif;
         background-color: black;
         background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)),
         url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/33-1068x712.jpg")center/cover;
-        width:600px;
+        max-width:600px;
         height:500px;
         color: #fff;
         font-family: "EB Garamond", serif;
