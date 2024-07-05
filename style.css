@@ -549,26 +549,27 @@ font-family: "EB Garamond", serif;
         height:50px;
        }
  @media (max-width:640px){
-    
+       
     .menu{
         display: none;
     }
     .hanbugar{
         display: block;
-              top: 2%;
-        right: -17%;
+              top:20px;
+            left:350px;
             z-index:100;
         color: #0de065;
      position: absolute;
         border-radius: 50%;
-        width:10%;
-        height:10%;
+        width:20px;
+        height:20px;
      display: flex;
      align-items: center;
      justify-content: center;
        padding: 10px;
      font-size: 3rem;
      padding: 30px;
+     
     }
     .mobile-menu{
         display: none;
@@ -584,10 +585,13 @@ font-family: "EB Garamond", serif;
     }
     .logo{
         padding: 20px;
+        
     }
     header{
-        padding: 30px;
-        width: 650px;
+        padding:10px;
+        max-width:650px;
+        box-sizing: border-box;
+      
     }
     .mobile-menu{
              display: flex;
