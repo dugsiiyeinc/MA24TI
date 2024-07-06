@@ -1,0 +1,39 @@
+.container{
+    height: 100vh;
+    display: grid;
+       gap:20px;
+       grid-template-columns: repeat(5,1fr);
+}
+.container-1{
+    grid-column: 1 / span 2;
+    background-color: aqua;
+}
+.container-2{
+    grid-column: 3 / span 3;
+     display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.nav-1{
+    background-color: black;
+}
+.nav-2{
+    background-color: rgb(27, 244, 52);
+}
+
+@media (max-width:640px){
+    .container{
+   
+        display: grid;
+           gap:20px;
+           grid-template-columns: 1fr;
+
+    }
+    .container-1{
+        grid-column: 1;
+    }
+    .container-2{
+        grid-column: 1;
+    }
+   
+}
