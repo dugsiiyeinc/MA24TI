@@ -1174,7 +1174,7 @@ font-family: "EB Garamond", serif;
                           grid-column: 1;
                              display: grid;
                              grid-template-columns: 1fr;
-                             width: 570px;
+                             width:500px;
                         }
                         .title img{
                           
@@ -1190,7 +1190,7 @@ font-family: "EB Garamond", serif;
                             gap: 20px;
                         }
                         .subscribe .check-image{
-                            width: 570px;
+                            width:500px;
                         }
     } 
     @media screen and (min-width:641px) and (max-width:770px){
