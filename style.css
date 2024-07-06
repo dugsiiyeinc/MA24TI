@@ -548,6 +548,51 @@ font-family: "EB Garamond", serif;
         font-weight: 500;
         height:50px;
        }
+       .albums{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:20px;
+     
+       }
+       .albums .album-1 h3 , .album-2 h3 , .album-3 h3 ,.album-4 h3{
+        position: absolute;
+         top: 38%;
+         left:15%;
+         text-align: center;
+        color: #fff;
+        font-size: 2.5rem;
+        font-family: "EB Garamond", serif;
+        font-weight: 700;
+       }
+       .albums .album-1{
+         background: url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/39.jpg")center/cover,no-repeat;
+         height:290px;
+         border-radius: 50%;
+         margin: 20px 0px;
+         position: relative;
+       }
+       .albums  .album-2{
+        background: url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/6.jpg")center/cover,no-repeat;
+        border-radius: 50%;
+         margin: 20px 0px;
+         height:290px;
+         position: relative;
+       }
+       .albums  .album-3{
+        background: url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/21.jpg")center/cover,no-repeat;
+        border-radius: 50%;
+         margin: 20px 0px;
+         height:290px;
+         position: relative;
+       }
+       .albums  .album-4{
+        background: url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/18.jpg")center/cover,no-repeat;
+        border-radius: 50%;
+         margin: 20px 0px;
+         height:290px;
+         position: relative;
+       }
+    
  @media (max-width:640px){
        
     .menu{
@@ -866,7 +911,43 @@ font-family: "EB Garamond", serif;
        .amember-info button{
         margin-inline: 0;
        }
- 
+       .albums{
+              display: grid;
+         grid-template-columns:1fr;
+                        
+                   }
+                   .albums .album-1 {
+                    height:480px;
+                    width:500px;
+                     margin-inline: auto;
+                     padding: 20px;
+                   }
+                   .albums .album-2 {
+                    height:480px;
+                    width:500px;
+                     margin-inline: auto;
+                   }
+                   .albums .album-3 {
+                    height:480px;
+                    width:500px;
+                     margin-inline: auto;
+                   }
+                   .albums .album-4 {
+                    height:480px;
+                     width:500px;
+                     margin-inline: auto;
+                   }
+                   .albums .album-1 h3 , .album-2 h3 , .album-3 h3 ,.album-4 h3{
+                    position: absolute;
+                     top: 38%;
+                     left:15%;
+                     text-align: center;
+                    color: #fff;
+                    font-size: 4.5rem;
+                    font-family: "EB Garamond", serif;
+                    font-weight: 700;
+                   }
+        
     } 
     @media screen and (min-width:641px) and (max-width:770px){
 
@@ -1201,4 +1282,40 @@ font-family: "EB Garamond", serif;
            .amember-info button{
             margin-inline: 0;
            }
+           .albums{
+            display: grid;
+       grid-template-columns:1fr;
+           padding: 20px;
+            
+                 }
+                  .albums .album-1 h3 , .album-2 h3 , .album-3 h3 ,.album-4 h3{
+                    position: absolute;
+                     top: 38%;
+                     left:15%;
+                     text-align: center;
+                    color: #fff;
+                    font-size: 4.5rem;
+                    font-family: "EB Garamond", serif;
+                    font-weight: 700;
+                   }
+                 .albums .album-1 {
+                  height:480px;
+                  width:500px;
+                   margin-inline: auto;
+                 }
+                 .albums .album-2 {
+                  height:480px;
+                  width:500px;
+                   margin-inline: auto;
+                 }
+                 .albums .album-3 {
+                  height:480px;
+                  width:500px;
+                   margin-inline: auto;
+                 }
+                 .albums .album-4 {
+                  height:480px;
+                  width:500px;
+                   margin-inline: auto;
+                 }
     }
