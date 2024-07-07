@@ -760,7 +760,7 @@ font-family: "EB Garamond", serif;
         background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.9)) ,
         url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/33-696x464.jpg")center/cover,no-repeat;
         height:400px;
-        width:100%;
+        width:270px;
         margin-top: 20px;
         position: relative;
     }
@@ -1177,10 +1177,13 @@ font-family: "EB Garamond", serif;
                              max-width:573px;
                         }
 
-                        form input ,button{
+                        /* form input ,button{
                             max-width:573px;
                            
                              }
+                             .check-image{
+                                max-width:573px;
+                             } */
                         .title img{
                           
                             width:130px;
@@ -1193,17 +1196,21 @@ font-family: "EB Garamond", serif;
                             justify-content: center;
                             align-items: center;
                             gap: 20px;
+                            
                         }
                       .subscribe{
-                        max-width:573px;
+                        /* grid-column: 1;
+                        max-width:900px;
+                        background-color: #0de065; */
                          }
                         .subscribe .check-image{
                             background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.9)) ,
                             url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/33-696x464.jpg")center/cover,no-repeat;
                             height:400px;
-                            max-width:900px;
+                            width:550px;
                             margin-top: 20px;
                             position: relative;
+                             margin-inline: auto;
                         }
     } 
     @media screen and (min-width:641px) and (max-width:770px){
