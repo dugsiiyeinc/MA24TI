@@ -1118,24 +1118,24 @@ font-family: "EB Garamond", serif;
                         
                    }
                    .albums .album-1 {
-                    height:480px;
-                    width:500px;
+                    height:400px;
+                    width:400px;
                      margin-inline: auto;
                      padding: 20px;
                    }
                    .albums .album-2 {
-                    height:480px;
-                    width:500px;
+                    height:400px;
+                    width:400px;
                      margin-inline: auto;
                    }
                    .albums .album-3 {
-                    height:480px;
-                    width:500px;
+                    height:400px;
+                    width:400px;
                      margin-inline: auto;
                    }
                    .albums .album-4 {
-                    height:480px;
-                     width:500px;
+                    height:400px;
+                    width:400px;
                      margin-inline: auto;
                    }
                    .albums .album-1 h3 , .album-2 h3 , .album-3 h3 ,.album-4 h3{
@@ -1174,7 +1174,7 @@ font-family: "EB Garamond", serif;
                           grid-column: 1;
                              display: grid;
                              grid-template-columns: 1fr;
-                             width:500px;
+                             max-width:573px;
                         }
                         .title img{
                           
@@ -1190,7 +1190,7 @@ font-family: "EB Garamond", serif;
                             gap: 20px;
                         }
                         .subscribe .check-image{
-                            width:500px;
+                            max-width:573px;
                         }
     } 
     @media screen and (min-width:641px) and (max-width:770px){
