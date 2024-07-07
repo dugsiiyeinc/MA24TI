@@ -713,7 +713,7 @@ font-family: "EB Garamond", serif;
     margin-top: 20px;
    }
   form input ,button{
- width: 100%;
+ width: 100%
 
   }
   form input{
@@ -1176,6 +1176,11 @@ font-family: "EB Garamond", serif;
                              grid-template-columns: 1fr;
                              max-width:573px;
                         }
+
+                        form input ,button{
+                            max-width:573px;
+                           
+                             }
                         .title img{
                           
                             width:130px;
