@@ -1194,7 +1194,9 @@ font-family: "EB Garamond", serif;
                             align-items: center;
                             gap: 20px;
                         }
-                      
+                      .subscribe{
+                        max-width:573px;
+                         }
                         .subscribe .check-image{
                             background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.9)) ,
                             url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/33-696x464.jpg")center/cover,no-repeat;
