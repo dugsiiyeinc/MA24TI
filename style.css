@@ -760,7 +760,7 @@ font-family: "EB Garamond", serif;
         background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.9)) ,
         url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/33-696x464.jpg")center/cover,no-repeat;
         height:400px;
-        width:600px;
+        width:100%;
         margin-top: 20px;
         position: relative;
     }
@@ -1194,8 +1194,14 @@ font-family: "EB Garamond", serif;
                             align-items: center;
                             gap: 20px;
                         }
+                      
                         .subscribe .check-image{
-                            max-width:573px;
+                            background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.9)) ,
+                            url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/33-696x464.jpg")center/cover,no-repeat;
+                            height:400px;
+                            max-width:900px;
+                            margin-top: 20px;
+                            position: relative;
                         }
     } 
     @media screen and (min-width:641px) and (max-width:770px){
