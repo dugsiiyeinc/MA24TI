@@ -782,6 +782,7 @@ font-family: "EB Garamond", serif;
                 margin-top:30px;
               align-items: center;
               justify-content: center;
+              
             }
             .title img{
                 /* margin-left: 100px; */
@@ -792,6 +793,105 @@ font-family: "EB Garamond", serif;
             }
             .title p{
                 font-size: 0.875rem;
+                font-weight: 500;
+            }
+            .footer{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                gap: 50px;
+                margin-top: 50px;
+                border-bottom: 0.5px solid #d2cece;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            .footer .follow-us h1, .company h1, .letters h1, .popular-news h1{
+                font-family: "EB Garamond", serif;
+                 margin-bottom: 20px;
+                 border-bottom: 1.5px solid #000;
+                 padding-bottom: 20px;
+            }
+            .footer .follow-us .icons i{
+                background-color: #000;
+                color: #fff;
+                padding: 10px 15px;
+               margin-bottom: 20px;
+               margin-left:7px;
+               margin-top: 20px;
+              
+            }
+         
+            .footer .follow-us p{
+                font-size: 0.8125rem;
+                font-weight: 400;
+                
+            }
+            .company  ,.letters ,.popular-news ,.follow-us{
+                border-right: 0.5px solid #d2cece;
+                               padding-right: 20px;
+            }
+            .company ul {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            .company ul a{
+                text-decoration: none;
+                  color: #000;
+                  font-weight: 600;
+                  font-size: 0.8125rem;
+            }
+            .company ul a:hover{
+                color: #309b65;
+            }
+            .letters p, .popular-news p{
+                font-family: "EB Garamond", serif;
+                margin-bottom: 20px;
+                font-size: 1rem;
+                font-weight: 600;
+                padding-bottom: 15px;
+                border-bottom: 0.5px solid #d2cece;
+
+            }
+            .letters p:hover, .popular-news p:hover{
+                color: #309b65;
+            }
+            .non-border p{
+             border-bottom: none;
+            }
+            .footer-center{
+             display: flex;
+             justify-content: space-between;
+            }
+
+            .footer-center ul {
+                display: flex;
+                 gap: 10px;
+                 align-items: center;
+                 justify-content: center;
+            }
+            .footer-center {
+                border-bottom: 0.5px solid #d2cece;
+                padding:10px;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .footer-center ul a{
+                text-decoration: none;
+                  color: #000;
+                  font-weight: 600;
+                  font-size: 0.8125rem;
+            }
+            .footer-center ul a:hover{
+                color: #309b65;
+            }
+            .footer-end{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 30px;
+            }
+            .footer-end p{
+                font-size: 0.6875rem;
                 font-weight: 500;
             }
  @media (max-width:640px){
@@ -1181,6 +1281,9 @@ font-family: "EB Garamond", serif;
                             max-width:573px;
                            
                              }
+                             .subscribe{
+                                max-width:673px;
+                             }
                              .check-image{
                                 max-width:573px;
                              }
@@ -1193,28 +1296,41 @@ font-family: "EB Garamond", serif;
                         }
                         .title{
                             display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            gap: 20px;
+                                margin-top:30px;
+                              align-items: center;
+                              justify-content: center;
                             
-                        }
-                      .subscribe{
-                        max-width:573px;
-                        background-color: #0de065;
-                         }
-                         .subscribe form input ,button{
-                            max-width:900px;
-                           
-                             }
-                        .subscribe .check-image{
-                            background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.9)) ,
-                            url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/33-696x464.jpg")center/cover,no-repeat;
-                            height:400px;
-                            max-width:573px;
-                            margin-top: 20px;
-                            position: relative;
-                            margin-inline: auto;
-                        }
+                              
+                            }
+                            .footer{
+                                display: grid;
+                                grid-template-columns: 1fr;
+                                padding: 20px;
+                            }
+                           .footer{
+                            width: 90%;
+                           }
+                            .footer-center {
+                               display: flex;
+                               flex-direction: column;
+                               align-items: center;
+                               justify-content: center;
+                              
+                            }
+                            .footer-center ul{
+                                border-bottom: 0.5px solid #d2cece;
+                                padding-bottom:30px;
+                                width: 90%;
+                                margin-bottom: 20px;
+                            }
+                            .footer-center ul{
+                                margin-top: -10px;
+                            }
+                            .footer-center {
+                             border: none;
+                            }
+                    
+                      
     } 
     @media screen and (min-width:641px) and (max-width:770px){
 
@@ -1612,7 +1728,34 @@ font-family: "EB Garamond", serif;
                              display: grid;
                              grid-template-columns: 1fr;
                         }
-                        .title img{
+                        .footer{
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            padding: 20px;
+                        }
+                       .footer{
+                        width: 90%;
+                       }
+                        .footer-center {
+                           display: flex;
+                           flex-direction: column;
+                           align-items: center;
+                           justify-content: center;
+                          
+                        }
+                        .footer-center ul{
+                            border-bottom: 0.5px solid #d2cece;
+                            padding-bottom:30px;
+                            width: 90%;
+                            margin-bottom: 20px;
+                        }
+                        .footer-center ul{
+                            margin-top: -10px;
+                        }
+                        .footer-center {
+                         border: none;
+                        }
+                        /* .title img{
                           
                             width:130px;
                             border-radius: 50%;
@@ -1631,5 +1774,5 @@ font-family: "EB Garamond", serif;
                         .latest-articles .last-article .multiple{
                        
                                width:690px;
-                          }
+                          } */
     }
