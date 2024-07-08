@@ -32,15 +32,7 @@ nav{
     border-bottom: 0.5px solid #d2cece;
     /* padding:-6px; */
 }
-.hero{
-    border-bottom: 0.5px solid #d2cece;
-    padding:40px;
-}
 
-.hero-center , .hero-left , .hero-right {
-    border-right: 0.5px solid #d2cece;
-    padding-right: 10px;
-}
 .links-menu , .menu ,.logo{
     border-right: 0.5px solid #d2cece;
     padding-right:10px ;
@@ -158,8 +150,18 @@ header p{
     gap: 1rem;
    
 }
+
 .hero .hero-left img{
     width: 100%;
+}
+.hero{
+    border-bottom: 0.5px solid #d2cece;
+    padding-bottom:40px;
+}
+
+.hero-center , .hero-left , .hero-right {
+    border-right: 0.5px solid #d2cece;
+    padding-right: 10px;
 }
 .hero .hero-left h4{
     color: #309b65;
@@ -1233,6 +1235,9 @@ font-family: "EB Garamond", serif;
            width:170px;
            height:100px;
        }
+       .hero-center , .hero-left , .hero-right {
+       border: none;
+    }
         /* end STYLE hero specially smart-phones */
 
          /* START STYLE news-paper specially smart-phones */
@@ -1300,6 +1305,7 @@ font-family: "EB Garamond", serif;
         /* background-color: #0de065; */
         max-width:573px;
         /* height: 700px; */
+        border-bottom: none;
     }
     .instagram .instagram-1 img{
         width:200px;
@@ -1312,7 +1318,9 @@ font-family: "EB Garamond", serif;
              /* Start STYLE news-paper specially smart-phones */
      .news-paper-image{
            max-width:573px;
+           border: none;
      }
+
    /* end STYLE news-paper specially smart-phones */
    
        /* START STYLE Gneral-news specially smart-phones */
@@ -1498,6 +1506,7 @@ font-family: "EB Garamond", serif;
                             .footer-center {
                              border: none;
                             }
+                         
                             .company  ,.letters ,.popular-news ,.follow-us{
                                 border:none;
                             }
