@@ -17,7 +17,8 @@ body{
 small{
     background-color: #309b65;
     color: #fff;
-    padding: 2px 5px;
+    padding:3px ;
+    font-size: 0.6rem;
     font-family: "Roboto", sans-serif;
  }
 
@@ -127,13 +128,129 @@ ul li button{
 .mobile-menu{
     display: none;
 }
-
  /* END    STYLE NAVPAR*/
 
 
+  /* <!-- start style news */
+
+.news-menu{
+display: flex;
+justify-content: space-between;
+margin-top: 50px;
+border-bottom: 1px solid #000;
+padding-bottom: 20px;
+}
+
+.news-menu h1{
+    font-size: 2.625rem;
+    font-weight: 700;
+    font-family: "EB Garamond", serif;
+}
+.news-menu a{
+    text-decoration: none;
+    color:#309b65;
+    margin-left: 10px;
+    font-size: 0.9375rem;
+    font-weight: 500;
+}
+.news{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+    margin-top: 50px;
+    border-bottom: 0.5px solid #d2cece;
+    padding-bottom: 40px;
+}
+.news .news-left{
+    grid-column: 1 / span 2;
+    /* background-color: #0de065; */
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)),
+     url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/25-1068x713.jpg")center/cover,no-repeat;
+    position: relative;
+    color: #fff;
+ 
+    
+}
+.news .news-left .news-left-info{
+    position: absolute;
+    bottom:0;
+    padding: 20px;
+}
+.news .news-left .news-left-info button{
+    background-color: #fff;
+    color: #309b65;
+    width: 20%;
+    padding:5px  10px;
+    font-size: 0.8666666666666667rem;
+    font-weight:550;
+    text-transform: uppercase;
+    border: none;
+    margin-bottom: 10px;
+}
+.news .news-left .news-left-info h4{
+    font-family: "EB Garamond", serif;
+    font-size: 2.1875rem;
+    font-weight: 700;
+    line-height: 39px;
+    margin-bottom: 10px;
+}
+.news .news-right{
+    grid-column: 3 / span 3;
+       display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    border-left: 0.5px solid #d2cece;
+    /* padding-left: 20px; */
+}
+
+.news .news-right  img{
+    width: 100%;
+    height: 150px;
+}
+.news .news-right  .right-1-info{
+    margin-bottom: 20px;
+}
+.news .news-right #right-bottom{
+    border-bottom: 0.5px solid #d2cece;
+    padding: 10px;
+}
+.news .news-right  h2 {
+   font-size: 0.9125rem;
+   font-weight: 700;
+   color: #309b65;
+   text-transform: uppercase;
+   margin:10px 0;
+}
+.news .news-right  p{
+    font-family: "EB Garamond", serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.news .news-right  p:hover{
+    color: #309b65;
+}
+.news .news-right .right-2{
+   
+}
+  /* <!-- End style news */
+
+/* start style news-paper */
+
+.news-paper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:80px 0;
+    border-bottom: 0.5px solid #d2cece;
+    margin-inline: auto;
+    padding-bottom: 40px;
+}
+/* End style news-paper */
 
 /* START  STYLE LASTEST ARTICLE    contain last-article and subscribe */
 .latest-articles{
+    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(8,1fr);
     gap: 50px;
@@ -182,6 +299,7 @@ ul li button{
     font-size: 1rem;
     color:rgb(153, 153, 153);
     font-weight: 400;
+    
    }
    form{
     margin-top: 20px;
@@ -269,7 +387,9 @@ ul li button{
             .title p{
                 font-size: 0.875rem;
                 font-weight: 500;
+                line-height:18px;
             }
+            
  /* END    STYLE    LASTEST-ARTICLES  CONTAIN LAST-ARTCLE   AND SUBSCRIBE*/
 
 
@@ -476,10 +596,54 @@ ul li button{
          color: rgb(48,155,101);
  
      }
-/* WND STYLE FOOTER  @MEDIA QUERRY specally TSMART PHONES */
+/* END STYLE nav  @MEDIA QUERRY specally TSMART PHONES */
 
+  /* START STYLE news  @MEDIA QUERRY specally SMART PHONES */
 
+  .news-menu{
+    padding:30px;
+  }
+.news{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding-left: 10px;
+}
+.news .news-left{
+    grid-column: 1;
+}
+.news .news-right{
+    grid-column: 1;
+    /* padding-left: -10px; */
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.news .news-right  img{
+    width: 100%;
+    height:300px;
+}
+.news .news-right{
+    border-left: none;
+}
+
+    /* end STYLE news  @MEDIA QUERRY specally TSMART PHONES */
      
+
+
+
+         /* START STYLE news-ppaer  @MEDIA QUERRY specally TSMART PHONES */
+
+         .news-paper img{
+             width:90%;
+             
+         }
+
+         /* end STYLE  news-paper  @MEDIA QUERRY specally TSMART PHONES */
+
+
+
+
+
          /* START STYLE FOOTER  @MEDIA QUERRY specally TSMART PHONES */
      .footer{
         display: grid;
@@ -542,6 +706,19 @@ ul li button{
                flex-direction: column;
             }
              /* /*START STYLE LASTEST-ARTICLES  CONTAIN LAST-ARTCLE  AND SUBSCRIBE @MEDIA QUERRY specally SMART-PHON */
+
+
+              /* /*START STYLE news-paper-image @MEDIA QUERRY specally SMART-PHON */
+              .news-paper-image{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 30px;
+              }
+              /* /*Send STYLE news-paper-image @MEDIA QUERRY specally SMART-PHON */
+
+
+
  }
  @media screen and (min-width:641px) and (max-width:770px){
     /* start Navbar  @MEDIA QUERRY specally Tablet */
