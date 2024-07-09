@@ -155,23 +155,22 @@ padding-bottom: 20px;
 }
 .news{
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(7,1fr);
     gap: 30px;
     margin-top: 50px;
     border-bottom: 0.5px solid #d2cece;
     padding-bottom: 40px;
 }
 .news .news-left{
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 3;
     /* background-color: #0de065; */
     height: 100vh;
     background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)),
      url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/25-1068x713.jpg")center/cover,no-repeat;
     position: relative;
     color: #fff;
- 
-    
-}
+        
+    }
 .news .news-left .news-left-info{
     position: absolute;
     bottom:0;
@@ -196,24 +195,30 @@ padding-bottom: 20px;
     margin-bottom: 10px;
 }
 .news .news-right{
-    grid-column: 3 / span 3;
-       display: grid;
+    grid-column: 4 / span 4;
+    display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 20px;
-    border-left: 0.5px solid #d2cece;
-    /* padding-left: 20px; */
-}
+    gap: 30px;
+ }
+
 
 .news .news-right  img{
     width: 100%;
     height: 150px;
+}
+.news .news-right{
+    
 }
 .news .news-right  .right-1-info{
     margin-bottom: 20px;
 }
 .news .news-right #right-bottom{
     border-bottom: 0.5px solid #d2cece;
-    padding: 10px;
+    padding-bottom: 40px;
+    gap: 10px;
+}
+.news .news-right #right-margin{
+    /* margin-top: -100px; */
 }
 .news .news-right  h2 {
    font-size: 0.9125rem;
@@ -305,7 +310,7 @@ padding-bottom: 20px;
     margin-top: 20px;
    }
   .subscribe input ,button{
- width: 100%;
+ width: 90%;
 
   }
   form input{
@@ -392,7 +397,14 @@ padding-bottom: 20px;
             
  /* END    STYLE    LASTEST-ARTICLES  CONTAIN LAST-ARTCLE   AND SUBSCRIBE*/
 
-
+   /* /*START STYLE news-paper-image  */
+   .news-paper-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  /* /*Send STYLE news-paper-image  */
 
 /* START  STYLE FOOTER */ 
 .footer{
@@ -560,7 +572,7 @@ padding-bottom: 20px;
           inset: 0 0 0 0;              
          color: #fff;   
          transform: translateX(0%);
-         transition: transform ease-out 3s;
+         transition: transform ease-out 0.1s;
          flex-direction: column;
      
      }
@@ -603,6 +615,7 @@ padding-bottom: 20px;
   .news-menu{
     padding:30px;
   }
+
 .news{
     display:grid;
     grid-template-columns: 1fr;
@@ -610,22 +623,31 @@ padding-bottom: 20px;
     padding-left: 10px;
 }
 .news .news-left{
-    grid-column: 1;
-}
+    grid-column: 1 / span 3;
+    /* background-color: #0de065; */
+    /* height: 100vh; */
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)),
+     url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/25-1068x713.jpg")center/cover,no-repeat;
+    position: relative;
+    color: #fff;
+        width:97%;
+       
+    }
 .news .news-right{
     grid-column: 1;
-    /* padding-left: -10px; */
-    display: grid;
+      display: grid;
     grid-template-columns: 1fr;
 }
 .news .news-right  img{
-    width: 100%;
+  
     height:300px;
 }
 .news .news-right{
     border-left: none;
 }
-
+.news .news-right #right-margin{
+    margin-top: -40px;
+}
     /* end STYLE news  @MEDIA QUERRY specally TSMART PHONES */
      
 
@@ -651,7 +673,7 @@ padding-bottom: 20px;
         padding: 20px;
     }
    .footer{
-    width: 90%;
+    width: 100%;
    }
     .footer-center {
        display: flex;
@@ -663,7 +685,7 @@ padding-bottom: 20px;
     .footer-center ul{
         border-bottom: 0.5px solid #d2cece;
         padding-bottom:30px;
-        width: 90%;
+        width: 100%;
         margin-bottom: 20px;
     }
     .footer-center ul{
@@ -721,154 +743,229 @@ padding-bottom: 20px;
 
  }
  @media screen and (min-width:641px) and (max-width:770px){
-    /* start Navbar  @MEDIA QUERRY specally Tablet */
-     .menu{
-         display: none;
- 
-     }
-     .hanbugar{
-         display: block;
-             top:30px;
-             right:0;
-             z-index:100;
-         color: #0de065;
-      position: absolute;
-         border-radius: 50%;
-         width:20px;
-         height:20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-        padding: 10px;
-      font-size:2.5rem;
-      padding: 30px;
-      
-     }
-     .mobile-menu{
-         display: none;
-     }
-     .mobile-menu[data-visible="false"]{
-         transform: translateX(100%);
-     }
-     .hanbugar i[data-visible="true"]{
-         display: block;
-     }
-     .hanbugar i[data-visible="false"]{
-         display:none;
-     }
-     .logo{
-         padding: 20px;
-         
-     }
-    
-     .mobile-menu{
-              display: flex;
-         justify-content: center;
-      position:fixed;
-         background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
-         url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/38.jpg")center/cover,no-repeat;
-         width:100%;
-         height:100vh;
-          inset: 0 0 0 0;              
-         color: #fff;   
-         transform: translateX(0%);
-         transition: transform ease-out 3s;
-         flex-direction: column;
-     
-     }
-     
-     .mobile-menu {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-     }
-     .mobile-menu a{
-         text-decoration: none;
-         color: #fff;
-         font-size: 1.5rem;
-         margin: 10px 0;
-         cursor: pointer;
-         
-     }
-     .mobile-menu a i{
-   
-         padding: 10px;
-     }
-     .mobile-menu a button{
-         background-color: RGB(77 178 236);
-         color: #fff;
-         padding:10px;
-         border: none;
-         font-size: 0.75rem;
-         font-weight: 500;
-         text-transform: uppercase;
-     }
-     .mobile-menu  a:hover{
-         color: rgb(48,155,101);
- 
-     }
-      /* END Navbar  @MEDIA QUERRY specally Tablet */
+    /* START STYLE NAVPAR  @MEDIA QUERRY specally TSMART PHONES */
+    .menu{
+        display: none;
 
-     /* START  STYLE FOOTER   @MEDIA QUERRY specially  tablet*/ 
-     .footer{
-        display: grid;
-        grid-template-columns: 1fr;
+    }
+    .hanbugar{
+        display: block;
+            top:30px;
+            right:0;
+            z-index:100;
+        color: #0de065;
+     position: absolute;
+        border-radius: 50%;
+        width:20px;
+        height:20px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+       padding: 10px;
+     font-size:2.5rem;
+     padding: 30px;
+     
+    }
+    .mobile-menu{
+        display: none;
+    }
+    .mobile-menu[data-visible="false"]{
+        transform: translateX(100%);
+    }
+    .hanbugar i[data-visible="true"]{
+        display: block;
+    }
+    .hanbugar i[data-visible="false"]{
+        display:none;
+    }
+    .logo{
         padding: 20px;
-    }
-   .footer{
-    width: 90%;
-   }
-    .footer-center {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
-      
-    }
-    .footer-center ul{
-        border-bottom: 0.5px solid #d2cece;
-        padding-bottom:30px;
-        width: 90%;
-        margin-bottom: 20px;
-    }
-    .footer-center ul{
-        margin-top: -10px;
-    }
-    .footer-center {
-     border: none;
-    }
-    .company  ,.letters ,.popular-news ,.follow-us{
-        border:none;
+        
     }
     .links-menu , .menu ,.logo{
-        border:none;
+        border-right: 0.5px solid #d2cece;
+        padding-right:10px ;
     }
-    .company ul{
-        display: flex;
-        align-items: self-start;
+    .logo .logo-right #news{
+        border-bottom: 1px solid black;
     }
+   
+    .mobile-menu{
+             display: flex;
+        justify-content: center;
+     position:fixed;
+        background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+        url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/38.jpg")center/cover,no-repeat;
+        width:100%;
+        height:100vh;
+         inset: 0 0 0 0;              
+        color: #fff;   
+        transform: translateX(0%);
+        transition: transform ease-out 3s;
+        flex-direction: column;
+    
+    }
+    
+    .mobile-menu {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+    }
+    .mobile-menu a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+        margin: 10px 0;
+        cursor: pointer;
+        
+    }
+    .mobile-menu a i{
+  
+        padding: 10px;
+    }
+    .mobile-menu a button{
+        background-color: RGB(77 178 236);
+        color: #fff;
+        padding:10px;
+        border: none;
+        font-size: 0.75rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .mobile-menu  a:hover{
+        color: rgb(48,155,101);
 
-     /* END STYLE FOOTER   @MEDIA QUERRY specially  tablet*/
+    }
+/* END STYLE nav  @MEDIA QUERRY specally TSMART PHONES */
 
-     /* START STYLE LASTEST-ARTICLES  CONTAIN LAST-ARTCLE  AND SUBSCRIBE @MEDIA QUERRY specially Tablet*/
-    .latest-articles{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 50px;
-        padding: 20px;
-       }
-       .latest-articles .last-article{
-       grid-column: 1;
-          
-       }
-       .latest-articles .subscribe{
-        grid-column: 1;
+ /* START STYLE news  @MEDIA QUERRY specally SMART PHONES */
+
+ .news-menu{
+   padding:30px;
+ }
+
+.news{
+   display:grid;
+   grid-template-columns: 1fr;
+   gap: 10px;
+   padding-left: 10px;
+}
+.news .news-left{
+    grid-column: 1 / span 3;
+    /* background-color: #0de065; */
+    /* height: 100vh; */
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)),
+     url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/25-1068x713.jpg")center/cover,no-repeat;
+    position: relative;
+    color: #fff;
+        width:97%;
+       z-index: -10;
+    }
+.news .news-right{
+   grid-column: 1;
+     display: grid;
+   grid-template-columns: 1fr;
+}
+.news .news-right  img{
+ 
+   height:300px;
+}
+.news .news-right{
+   border-left: none;
+}
+.news .news-right #right-margin{
+   margin-top: -40px;
+}
+   /* end STYLE news  @MEDIA QUERRY specally TSMART PHONES */
+    
+
+
+
+        /* START STYLE news-ppaer  @MEDIA QUERRY specally TSMART PHONES */
+
+        .news-paper img{
+            width:90%;
+            
+        }
+
+        /* end STYLE  news-paper  @MEDIA QUERRY specally TSMART PHONES */
+
+
+
+
+
+        /* START STYLE FOOTER  @MEDIA QUERRY specally TSMART PHONES */
+    .footer{
+       display: grid;
+       grid-template-columns: 1fr;
+       padding: 20px;
+   }
+  .footer{
+   width: 100%;
+  }
+   .footer-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+     
+   }
+   .footer-center ul{
+       border-bottom: 0.5px solid #d2cece;
+       padding-bottom:30px;
+       width: 100%;
+       margin-bottom: 20px;
+   }
+   .footer-center ul{
+       margin-top: -10px;
+   }
+   .footer-center {
+    border: none;
+   }
+   .company  ,.letters ,.popular-news ,.follow-us{
+       border:none;
+   }
+   .links-menu , .menu ,.logo{
+       border:none;
+   }
+   .company ul{
+       display: flex;
+       align-items: self-start;
+   }
+/* END STYLE FOOTER  @MEDIA QUERRY specally TSMART PHONES */
+
+
+
+/*START STYLE LASTEST-ARTICLES  CONTAIN LAST-ARTCLE  AND SUBSCRIBE @MEDIA QUERRY specally SMART-PHON*/    
+.latest-articles{
+       display: grid;
+       grid-template-columns: 1fr;
+       gap: 50px;
+       padding: 20px;
+      }
+      .latest-articles .last-article{
+      grid-column: 1;
          
-            }
-           .latest-articles .last-article .multiple{
+      }
+      .latest-articles .subscribe{
+       grid-column: 1;
+        
+           }
+          .latest-articles .last-article .multiple{
+              display: flex;
+              flex-direction: column;
+           }
+            /* /*START STYLE LASTEST-ARTICLES  CONTAIN LAST-ARTCLE  AND SUBSCRIBE @MEDIA QUERRY specally SMART-PHON */
+
+
+             /* /*START STYLE news-paper-image @MEDIA QUERRY specally SMART-PHON */
+             .news-paper-image{
                display: flex;
-               flex-direction: column;
-            }
-             /* END STYLE LASTEST-ARTICLES  CONTAIN LAST-ARTCLE  AND SUBSCRIBE @MEDIA QUERRY specally Tablet*/
+               align-items: center;
+               justify-content: center;
+               margin-top: 30px;
+             }
+             /* /*Send STYLE news-paper-image @MEDIA QUERRY specally SMART-PHON */
+
  }

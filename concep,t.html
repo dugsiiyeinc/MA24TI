@@ -1,182 +1,150 @@
+/* start Navbar  @MEDIA QUERRY specally Tablet */
+.menu{
+    display: none;
 
-/* START STYLE Latest-article  contain last-articles and subscribe*/
-       
-.latest-articles{
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-    gap: 50px;
-   }
-
-   .latest-articles .last-article{
-    grid-column: 1 /span 6;
-      
-   }
-   .latest-articles .subscribe{
-    grid-column: 7/span 2;
-     
-        }
-   .latest-articles .last-article img{
-    width: 100%;
-   }
-   .multiple .article-info .article-content img{
-    width: 5%;
-    height: 5%;
+}
+.hanbugar{
+    display: block;
+        top:30px;
+        right:0;
+        z-index:100;
+    color: #0de065;
+ position: absolute;
     border-radius: 50%;
-   }
-   .multiple{
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-   }
-   .latest-articles .last-article .multiple{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
-   }
-   .latest-articles .last-article .multiple h3{
-    font-size: 1.875rem;
-    font-family: "EB Garamond", serif;
-    font-weight: 600;
-   }
-   .latest-articles .last-article .multiple .article-content{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-     margin: 20px  0px;
-   }
-   .latest-articles .last-article .article-info p{
-    font-size: 1rem;
-    color:rgb(153, 153, 153);
-    font-weight: 400;
-   }
-   form{
-    margin-top: 20px;
-   }
-  .subscribe input ,button{
- width: 100%;
-
-  }
-  form input{
-    padding:15px;
-    outline: none;
-    border: 0.5px solid gray;
-    font-size: 0.8125rem;
-    font-weight:700;
-    
-  }
-  form button{
-    padding:15px;
-    outline: none;
-    border: 1px solid gray;
-    font-size: 0.8125rem;
-    font-weight:700;
-    margin-top: 20px;
-    background-color: #309b65;
-    color: #fff;
-    font-size:0.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-  form button i{
-    margin-left: 10px;
-    font-size: 1rem;
-  }
-  form .check {
-    display: flex;
-    margin-top: 10px;
-    gap: 10px;
-   }
-   form  .check input{
-    font-size: 0.5rem;
-    width: 10%;
-   }
-   form  .check p{
-  font-size: 0.8rem;
-   }
-   form  .check span{
-  font-size: 0.8rem;
-   }
-    .subscribe .check-image{
-        background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.9)) ,
-        url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/33-696x464.jpg")center/cover,no-repeat;
-        height:400px;
-        width:100%;
-        margin-top: 20px;
-        position: relative;
-    }
-    .subscribe .check-image .check-info {
-      position:absolute;
-     bottom: 0;
-     color: #fff;
-     padding: 20px;
+    width:20px;
+    height:20px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+   padding: 10px;
+ font-size:2.5rem;
+ padding: 30px;
  
-    }
-    .subscribe .check-image .check-info h3{
-        font-size: 1.25rem;
-        font-weight: 700;
-        margin-bottom: 10px;
-            }
-          
+}
+.mobile-menu{
+    display: none;
+}
+.mobile-menu[data-visible="false"]{
+    transform: translateX(100%);
+}
+.hanbugar i[data-visible="true"]{
+    display: block;
+}
+.hanbugar i[data-visible="false"]{
+    display:none;
+}
+.logo{
+    padding: 20px;
+    
+}
 
-            .title{
-            display: flex;
-                margin-top:30px;
-              align-items: center;
-              justify-content: center;
-              
-            }
-            .title img{
-                /* margin-left: 100px; */
-                width:90px;
-                border-radius: 50%;
-                height:80px;
-                background-size: cover;
-            }
-            .title p{
-                font-size: 0.875rem;
-                font-weight: 500;
-            }
-                /* END STYLE Latest-articles  contain last-articles and subscribe*/
+.mobile-menu{
+         display: flex;
+    justify-content: center;
+ position:fixed;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/38.jpg")center/cover,no-repeat;
+    width:100%;
+    height:100vh;
+     inset: 0 0 0 0;              
+    color: #fff;   
+    transform: translateX(0%);
+    transition: transform ease-out 3s;
+    flex-direction: column;
 
+}
 
+.mobile-menu {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+.mobile-menu a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    cursor: pointer;
+    
+}
+.mobile-menu a i{
 
+    padding: 10px;
+}
+.mobile-menu a button{
+    background-color: RGB(77 178 236);
+    color: #fff;
+    padding:10px;
+    border: none;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.mobile-menu  a:hover{
+    color: rgb(48,155,101);
 
+}
+ /* END Navbar  @MEDIA QUERRY specally Tablet */
 
+/* START  STYLE FOOTER   @MEDIA QUERRY specially  tablet*/ 
+.footer{
+   display: grid;
+   grid-template-columns: 1fr;
+   padding: 20px;
+}
+.footer{
+width: 90%;
+}
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.footer-center ul{
+   border-bottom: 0.5px solid #d2cece;
+   padding-bottom:30px;
+   width: 90%;
+   margin-bottom: 20px;
+}
+.footer-center ul{
+   margin-top: -10px;
+}
+.footer-center {
+border: none;
+}
+.company  ,.letters ,.popular-news ,.follow-us{
+   border:none;
+}
+.links-menu , .menu ,.logo{
+   border:none;
+}
+.company ul{
+   display: flex;
+   align-items: self-start;
+}
 
+/* END STYLE FOOTER   @MEDIA QUERRY specially  tablet*/
 
-
-
-
-
-                               
-       .articles{
-        display: grid;
-        grid-template-columns:1fr;
-        gap: 10px;
-        padding: 20px;
-    }
-    .articles .article{
-        display: grid;
-        grid-template-columns:1fr;
-        gap: 10px;
-        padding: 20px;
-    }
-    .articles .article h4{
-        font-size: 1.4125rem;
-        font-weight: 600;
-        font-family: "EB Garamond", serif;
-        margin-top:3%;
-    }
-    .articles .article .articles-profile{
-       display: flex;
-       gap: 7px;
-       align-items: center;
-       margin-top:3%;
-    }
-    .articles .article .articles-profile img{
-        width:5vh;
-        height:5vh;
-    }
-    .articles .article img{
-     width: 100%;
-    }
+/* START STYLE LASTEST-ARTICLES  CONTAIN LAST-ARTCLE  AND SUBSCRIBE @MEDIA QUERRY specially Tablet*/
+.latest-articles{
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 50px;
+   padding: 20px;
+  }
+  .latest-articles .last-article{
+  grid-column: 1;
+     
+  }
+  .latest-articles .subscribe{
+   grid-column: 1;
+    
+       }
+      .latest-articles .last-article .multiple{
+          display: flex;
+          flex-direction: column;
+       }
+        /* END STYLE LASTEST-ARTICLES  CONTAIN LAST-ARTCLE  AND SUBSCRIBE @MEDIA QUERRY specally Tablet*/

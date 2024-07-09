@@ -1074,7 +1074,7 @@ font-family: "EB Garamond", serif;
          inset: 0 0 0 0;              
         color: #fff;   
         transform: translateX(0%);
-        transition: transform ease-out 3s;
+        transition: transform ease-out 0.1s;
         flex-direction: column;
     
     }
