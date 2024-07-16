@@ -1,0 +1,1212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+  
+}
+.container{
+    max-width:1200px;
+    margin-inline: auto;
+}
+/* START STYLE GENERALLY*/
+small{
+    background-color: #309b65;
+    color: #fff;
+    padding: 2px 5px;
+    font-family: "Roboto", sans-serif;
+ }
+ /* END STYLE GENERALLY*/
+
+
+
+ /* START STYLE    NAV*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #d2cece;
+    /* padding:-6px; */
+}
+
+.links-menu , .menu ,.logo{
+    border-right: 0.5px solid #d2cece;
+    padding-right:10px ;
+}
+.logo{
+    display: flex;
+    gap: 10px;
+    
+}
+.logo-right{
+    font-size: 1rem;
+}
+.logo .logo-left{
+    text-transform: uppercase;
+    font-size: 3.375rem;
+      font-family: "EB Garamond", serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(48,155,101);
+}
+.logo .logo-right{
+ /* margin-left: 1rem; */
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.logo .logo-right #news{
+    border-bottom: 1px solid black;
+}
+.links-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links-menu li{
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding:31px;
+}
+.links-menu li i{
+    color: rgb(48,155,101);
+    width: 19px;
+     font-size:20px;
+}
+.links-menu li a{
+    color: #000;
+    text-decoration: none;
+}
+.links-menu li a:hover{
+    color: rgb(48,155,101);
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+}
+#active{
+    color: rgb(48,155,101);
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul li{
+    padding: 31px;
+    list-style: none;
+}
+ul li i{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+ul li  a{
+    color: #000;
+    text-decoration: none;
+}
+ul li button{
+    background-color: RGB(77 178 236);
+    color: #fff;
+    padding:10px;
+    border: none;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.hanbugar{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+/* END STYLE NAV*/
+
+
+/* START STYLE Header */
+header{
+    display: flex;
+     margin:20px 0;
+     }
+header h4{
+    color:#309b65;
+}
+header p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+header p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+.contain{
+    max-width:1600px;
+    margin-inline: auto;
+   
+
+}
+.foods{
+    margin-top: 1.1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    
+
+}
+/* .food-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+} */
+hr{
+   
+}
+.header-menu{
+    display: flex;
+    justify-content: flex-end;
+   
+}
+.header-menu li{
+    padding: 10px;
+}
+.header-menu li a{
+    color: #0de065;
+    font-size: 1.2rem;
+
+}
+.left-food h1{
+    margin-top: -2rem;
+}
+.left-food .food-ready {
+    line-height: 1.85rem;
+}
+.simple-food{
+    background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)),
+    url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/45-1068x712.jpg")center/cover;
+    width: 100%;
+    height: 820px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    padding: 40px 20px;
+   
+   
+}
+.headertype,.header-menu{
+   
+    /* border-bottom: 1px solid black; */
+}
+
+.header-menu li a {
+    color: rgb(76, 181, 119);
+}
+.description h2{
+    
+   
+}
+
+.description h1 a:hover{
+    color:  #309b65;
+}
+.food-header{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    border-bottom: 1px solid black;
+    margin-top: 4rem;
+}
+
+.headertype h1{
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-family:"EB Garamond" ;
+    font-size:3rem ;
+    color: rgb(0, 0, 0);
+}
+.left-food, .right-food{
+    margin-top: 1.5rem;
+}
+.simple-food h1{
+   margin: 10px 0px;
+   color: rgb(76, 181, 119);
+   font-family:Roboto ;
+   font-size:0.9rem ;
+   font-weight: 500;
+   /* background-color: white; */
+  
+
+   
+}
+.description h2{
+   
+}
+.profile{
+   
+}
+.simple-food p{
+    font-size: 1.35rem;
+}
+.simple-food h2{
+
+    font-size: 2.9rem;
+    line-height: 3.3rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 3rem;
+}
+.simple-food p{
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    line-height: 19px;
+    margin-top: 0.8rem;
+}
+.food-ready h1{
+    color: rgb(76, 181, 119);
+    font-family:Roboto ;
+    font-size:1rem ;
+    font-weight: 700;
+}
+
+.food-ready h2{
+    color: black;
+    font-family:"EB Garamond";
+    font-size:1.65rem ;
+    font-weight: 600;
+
+}
+.food-ready h2:hover{
+    color: 
+    rgb(76, 181, 119);
+}
+.simple-food{
+    line-height: 1.75rem;
+}
+
+.right-food{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    
+
+}
+
+
+.right-food .food-ready img{
+    width: 440px;
+    height: 285px;
+}
+
+/* .simple-food img{
+    width: 100%;
+    height: 780px;
+} */
+
+.right-letter h1{
+    text-align: center;
+    color:#999999;
+}
+
+.newspaper{
+    width: 980px;
+    margin-inline: auto;
+   
+    
+   height: 240px;
+    /* gap: 60px; */
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    background: url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/recl-content.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+   
+    /* padding: 20px 80px; */
+}
+.food-one{
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 700;
+    color:#4cb577;
+    
+
+}
+
+.section-food {
+
+    display: grid;
+    grid-template-columns:  3fr 1fr;
+    gap: 35px;
+    
+}
+
+.right-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+   
+
+    
+}
+
+.food-simple{
+    display: flex;
+    flex-direction: row;
+    gap: 2.2rem;
+    
+   
+
+}
+
+
+
+.image img{
+    width: 560px;
+    height: 360px;
+   
+}
+
+.description img{
+    width: 40px;
+    height: 40px;
+}
+.description h1 a{
+    text-decoration: none;
+    font-family: "EB Garamond";
+    font-size:2rem ;
+    font-weight:600 ;
+    color: black;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.description h2  img{
+    border-radius: 50%;
+}
+
+.description p{
+    font-size: 1.2rem;
+    color: 
+    rgb(153, 153, 153);
+    font-weight: 400;
+    font-size: 1.15rem;
+    line-height: 21px;
+}
+
+
+.left-section{
+   
+
+
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    transform: scale(1.5); /* Scale the checkbox */
+    -webkit-transform: scale(1.5); /* For Safari */
+    margin: 10px;
+}
+.paragraph{
+    font-size: 1.5rem;
+}
+
+.text{
+
+    padding: 17px 20px;
+}
+.btn{
+    padding: 17px 20px;
+    background-color: #309b65;
+    font-size: 2rem;
+    color: white;
+}
+.div-checkbox .checkbox{
+    font-size: 2rem;
+}
+
+.backround-img{
+    background: url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/33-696x464.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    margin-top: 5rem;
+    background-attachment:scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+   
+   
+   
+}
+.backround-img h2,h4{
+    margin-inline: 6rem;
+    width: 300px;
+    margin-block: 0.9rem;
+    
+  
+}
+.five-section{
+    margin-top: 2rem;
+}
+.description-letters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description-letters h1{
+    font-size:1rem ;
+    font-family:Roboto ;
+    font-weight:500 ;
+    color: black;
+}
+
+.description-image img{
+    width: 135px;
+    height: 140px;
+    border-radius: 50%;
+}
+.section-post{
+    display: flex;
+    gap: 20px;
+    margin-top: 1rem;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 2rem;
+
+}
+
+.last-backround-image{
+
+    background: url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/rec-sidebar.png");
+    background-position: center;
+    background-size: contain;
+    height: 600px;
+    margin-top: 5rem;
+}
+
+
+.food-sim{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 4.9rem;
+    
+    gap: 15px;
+}
+
+.food-sim h2{
+    font-size:1.5rem ;
+    font-family:Roboto; ;
+    font-weight:700 ;
+    color:  #4cb577;
+
+}
+.food-sim h1{
+    font-size:1.2rem ;
+    font-family:Roboto; ;
+    font-weight:700 ;
+    color:black ;
+}
+
+.food-sim p{
+    font-size: 1rem;
+    font-family:Roboto; ;
+    font-weight: 500;
+    Color:#999999;
+
+}
+
+.food-sim img{
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+}
+
+
+
+
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+    margin-top: 50px;
+    border-bottom: 0.5px solid #d2cece;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.footer .follow-us h1, .company h1, .letters h1, .popular-news h1{
+    font-family: "EB Garamond", serif;
+     margin-bottom: 20px;
+     border-bottom: 1.5px solid #000;
+     padding-bottom: 20px;
+}
+.footer .follow-us .icons i{
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+   margin-bottom: 20px;
+   margin-left:7px;
+   margin-top: 20px;
+  
+}
+
+.footer .follow-us p{
+    font-size: 0.8125rem;
+    font-weight: 400;
+    
+}
+.company  ,.letters ,.popular-news ,.follow-us{
+    border-right: 0.5px solid #d2cece;
+                   padding-right: 20px;
+}
+.company ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.company ul a{
+    text-decoration: none;
+      color: #000;
+      font-weight: 600;
+      font-size: 0.8125rem;
+}
+.company ul a:hover{
+    color: #309b65;
+}
+.letters p, .popular-news p{
+    font-family: "EB Garamond", serif;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid #d2cece;
+
+}
+.letters p:hover, .popular-news p:hover{
+    color: #309b65;
+}
+.non-border p{
+ border-bottom: none;
+}
+.footer-center{
+ display: flex;
+ justify-content: space-between;
+}
+
+.footer-center ul {
+    display: flex;
+     gap: 10px;
+     align-items: center;
+     justify-content: center;
+}
+.footer-center {
+    border-bottom: 0.5px solid #d2cece;
+    padding:10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.footer-center ul a{
+    text-decoration: none;
+      color: #000;
+      font-weight: 600;
+      font-size: 0.8125rem;
+}
+.footer-center ul a:hover{
+    color: #309b65;
+}
+.footer-end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.footer-end p{
+    font-size: 0.6875rem;
+    font-weight: 500;
+}
+
+@media (max-width:640px){
+       
+    .menu{
+        display: none;
+    }
+    .hanbugar{
+        display: block;
+              top:30px;
+            right:0;
+            z-index:100;
+        color: #0de065;
+     position: absolute;
+        border-radius: 50%;
+        width:20px;
+        height:20px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+       padding: 10px;
+     font-size:2.5rem;
+     padding: 30px;
+     
+    }
+    .mobile-menu{
+        display: none;
+    }
+
+    .mobile-menu[data-visible="false"]{
+        transform: translateX(100%);
+    }
+    .hanbugar i[data-visible="true"]{
+        display: block;
+    }
+    .hanbugar i[data-visible="false"]{
+        display:none;
+    }
+    .logo{
+        padding: 20px;
+        
+    }
+    header{
+        /* padding:20px;
+        max-width:600px;
+        box-sizing: border-box; */
+      
+    }
+    .mobile-menu{
+             display: flex;
+        justify-content: center;
+     position:fixed;
+        background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+        url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/38.jpg")center/cover,no-repeat;
+        width:100%;
+        height:100vh;
+         inset: 0 0 0 0;              
+        color: #fff;   
+        transform: translateX(0%);
+        transition: transform ease-out 3s;
+        flex-direction: column;
+    
+    }
+    
+    .mobile-menu {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+    }
+    .mobile-menu a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+        margin: 10px 0;
+        cursor: pointer;
+        
+    }
+    .mobile-menu a i{
+  
+        padding: 10px;
+    }
+    .mobile-menu a button{
+        background-color: RGB(77 178 236);
+        color: #fff;
+        padding:10px;
+        border: none;
+        font-size: 0.75rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .mobile-menu  a:hover{
+        color: rgb(48,155,101);
+
+    }
+    header{
+        padding: 20px;
+    }
+    #active{
+        color: rgb(48,155,101);
+    }
+
+    .foods{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    .right-food{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .simple-food img{
+        width: 100%;
+    }
+    .newspaper{
+        width: 400px;
+        height: 200px;
+        /* margin-inline: auto; */
+        padding: 140px 140px;
+        margin-left: 20px;
+        background-size: contain;
+        
+    }
+    .header-menu{
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .headertype h1{
+        margin-left: 10px;
+       
+        
+       
+        
+       
+    }
+    .headertype{
+        border-bottom: 1px solid black;
+    }
+    .food-header{
+        display: grid;
+        grid-template-columns: 1fr;
+        border-bottom: none;
+    }
+    .section-food{
+        display: grid;
+
+    }
+    .header-menu{
+        margin-top: 1rem;
+    }
+    .header-menu li{
+        /* border-bottom: none; */
+        padding: 12px;
+    }
+    .header-menu li a{
+        /* border-bottom: none; */
+       font-size: 1rem;
+    }
+
+    .section-food{
+        display: grid;
+        grid-template-columns: 1fr;
+    } 
+
+    .right-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .food-simple{
+        display: flex;
+        flex-direction: column;
+    }
+    .image img{
+        width: 430px;
+    }
+
+    .left-section{
+        margin-top: 4rem;
+    }
+
+    input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+        transform: scale(1.5); /* Scale the checkbox */
+        -webkit-transform: scale(1.5); /* For Safari */
+        margin: 10px;
+    }
+    .paragraph{
+        font-size: 1rem;
+    }
+
+    .backround-img{
+       display: flex;
+       height: 700px;
+       justify-content: flex-end;
+       align-items: center;
+
+    }
+    .backround-img h2,h4{
+        margin-inline: 0.1rem;
+
+       
+        margin-block: 1rem;
+        align-items: center;
+    }
+
+    .section-post{
+
+        text-align: center;
+    }
+
+    
+.food-sim{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 4.9rem;
+    
+    gap: 15px;
+}
+
+.food-sim h2{
+    font-size:1rem ;
+    font-family:Roboto; ;
+    font-weight:700 ;
+    color:  #4cb577;
+
+}
+.food-sim h1{
+    font-size:1rem ;
+    font-family:Roboto; ;
+    font-weight:700 ;
+    color:black ;
+}
+
+.food-sim p{
+    font-size: 1rem;
+    font-family:Roboto; ;
+    font-weight: 500;
+    Color:#999999;
+
+}
+
+.food-sim img{
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+}
+
+
+
+
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+   .footer{
+    width: 100%;
+   }
+    .footer-center {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+      
+    }
+    .footer-center ul{
+        border-bottom: 0.5px solid #d2cece;
+        padding-bottom:30px;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .footer-center ul{
+        margin-top: -10px;
+    }
+    .footer-center {
+     border: none;
+    }
+ 
+    .company  ,.letters ,.popular-news ,.follow-us{
+        border:none;
+    }
+    .links-menu , .menu ,.logo{
+        border:none;
+    }
+    .company ul{
+        display: flex;
+        align-items: self-start;
+    }
+       /* end STYLE fooer specially smart-phones */
+    
+
+}
+
+@media screen and (min-width:641px) and (max-width:770px){
+
+    .menu{
+        display: none;
+    }
+    .hanbugar{
+        display: block;
+              top:30px;
+            right:0;
+            z-index:100;
+        color: #0de065;
+     position: absolute;
+        border-radius: 50%;
+        width:20px;
+        height:20px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+       padding: 10px;
+     font-size:2.5rem;
+     padding: 30px;
+     
+    }
+    .mobile-menu{
+        display: none;
+    }
+    .mobile-menu[data-visible="false"]{
+        transform: translateX(100%);
+    }
+    .hanbugar i[data-visible="true"]{
+        display: block;
+    }
+    .hanbugar i[data-visible="false"]{
+        display:none;
+    }
+    .logo{
+        padding: 20px;
+        
+    }
+    header{
+        /* padding:20px;
+        max-width:600px;
+        box-sizing: border-box; */
+      
+    }
+    .mobile-menu{
+             display: flex;
+        justify-content: center;
+     position:fixed;
+        background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+        url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/38.jpg")center/cover,no-repeat;
+        width:100%;
+        height:100vh;
+         inset: 0 0 0 0;              
+        color: #fff;   
+        transform: translateX(0%);
+        transition: transform ease-out 3s;
+        flex-direction: column;
+    
+    }
+    
+    .mobile-menu {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+    }
+    .mobile-menu a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+        margin: 10px 0;
+        cursor: pointer;
+        
+    }
+    .mobile-menu a i{
+    
+        padding: 10px;
+    }
+    .mobile-menu a button{
+        background-color: RGB(77 178 236);
+        color: #fff;
+        padding:10px;
+        border: none;
+        font-size: 0.75rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .mobile-menu  a:hover{
+        color: rgb(48,155,101);
+    
+    }
+    header{
+        padding: 20px;
+    }
+    #active{
+        color: rgb(48,155,101);
+    }
+
+    .foods{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    .right-food{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+        transform: scale(1.5); /* Scale the checkbox */
+        -webkit-transform: scale(1.5); /* For Safari */
+        margin: 10px;
+    }
+    .paragraph{
+        font-size: 1rem;
+    }
+
+    
+    .simple-food img{
+        width: 100%;
+    }
+    .newspaper{
+        width: 400px;
+        height: 200px;
+        /* margin-inline: auto; */
+        padding: 140px 140px;
+        margin-left: 20px;
+        background-size: contain;
+    }
+    .header-menu{
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .headertype h1{
+        margin-left: 10px;
+       
+        
+       
+        
+       
+    }
+    .headertype{
+        border-bottom: 1px solid black;
+    }
+    .food-header{
+        display: grid;
+        grid-template-columns: 1fr;
+        border-bottom: none;
+    }
+    .section-food{
+        display: grid;
+
+    }
+    .header-menu{
+        margin-top: 1rem;
+    }
+    .header-menu li{
+        /* border-bottom: none; */
+        padding: 12px;
+    }
+    .header-menu li a{
+        /* border-bottom: none; */
+       font-size: 1rem;
+    }
+
+    .section-food{
+        display: grid;
+        grid-template-columns: 1fr;
+    } 
+
+    .right-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .food-simple{
+        display: flex;
+        flex-direction: column;
+    }
+    .image img{
+        width: 430px;
+    }
+    
+.food-sim{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 4.9rem;
+    
+    gap: 15px;
+}
+
+.food-sim h2{
+    font-size:1.5rem ;
+    font-family:Roboto; ;
+    font-weight:700 ;
+    color:  #4cb577;
+
+}
+.food-sim h1{
+    font-size:1rem ;
+    font-family:Roboto; ;
+    font-weight:700 ;
+    color:black ;
+}
+
+.food-sim p{
+    font-size: 1rem;
+    font-family:Roboto; ;
+    font-weight: 500;
+    Color:#999999;
+
+}
+
+.food-sim img{
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+}
+
+
+
+
+    /* footer */
+
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+   .footer{
+    width: 90%;
+   }
+    .footer-center {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+      
+    }
+    .footer-center ul{
+        border-bottom: 0.5px solid #d2cece;
+        padding-bottom:30px;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .footer-center ul{
+        margin-top: -10px;
+    }
+    .footer-center {
+     border: none;
+    }
+     .company  ,.letters ,.popular-news ,.follow-us{
+border:none;
+}
+.links-menu , .menu ,.logo{
+border:none;
+}
+.company ul{
+display: flex;
+align-items: self-start;
+}
+
+   
+    
+}
