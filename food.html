@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./food.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="hanbugar">
+        <i class="fa fa-bars" data-visible="true"></i>
+        <i class="fa fa-close" data-visible="false"></i>
+    </div>
+    <div class="contain">
+        <nav>
+            <div class="logo" style="border-left: 1px  solid #999999; padding-inline: 20px ;">
+                <div class="logo-left">
+                    <h3>np</h3>
+                </div>
+                <div class="logo-right">
+                    <h3 id="news">NewsPaper</h3>
+                    <h3>Puplication</h3>
+                </div>
+            </div>
+            <ul class="links-menu menu">
+            <li> <a href="./index.html">Home</a></li>
+            <li> <a href="./News.html">New</a></li>
+            <li> <a href="#">Travel</a></li>
+            <li> <a href="./food.html" id="active">Food</a></li>
+            <li> <a href="#">Make-Up</a></li>          
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            </ul>
+            <di class="mobile-menu" data-visible="false">
+         <a href="./index.html" id="active">Home</a>
+         <a href="./News.html">New</a>
+         <a href="#">Travel</a>
+         <a href="#">Food</a>
+         <a href="#">Make-Up</a>
+         <a href="#"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+         <a href=""><i class="fa-regular fa-user"></i>My Account</a>
+         <a href="#"><button>Subscribe</button></a>          
+                 </di>
+            <ul class="menu">
+              <li> <a href=""><i class="fa-regular fa-user"></i>My Account</a></li>
+              <li><button>Subscribe</button></li>
+            </ul>
+        </nav>
+    </div>  
+    
+    <!-- food header -->
+
+    <div class="contain food-header">
+         
+        <div class="headertype">
+            <h1 style="">Food</h1>
+        </div>
+
+
+        <div class="header-menu">
+            <ul>
+                <li><a href="">Celebrity</a></li>
+                <li> <a href="./food.html">Food</a></li>
+                <li> <a href="">Make-Up</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Travel</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="foods contain">
+
+       
+
+        <!-- <hr> -->
+       
+
+       
+
+     <div class="left-food">
+            
+            <div class="simple-food">
+                <h1 style="background-color: white; width: 60px; text-align: center;">FOOD</h1>
+                <h2>Easy Food Survey: Pizza Voted As One of the Most Satisfying Meals</h2>
+                <p>I actually first read this as alkalizing meaning effecting pH level, and I was like, OK I guess I understand how that could positively effect your body, but alchemizing...</p>
+               
+        
+             
+            </div>
+
+        </div>
+        <div class="right-food">
+            
+            
+            <div class="food-ready">
+               
+                
+                <img src="https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/44-696x463.jpg" alt="">
+                <h1>FOOD</h1>
+                <h2>This Week in Houston Food Blogs: High-Protein Recipes and Low Fat Shakes</h2>
+        
+              
+            </div>
+            <div class="food-ready">
+               
+                
+                <img src="https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/43-696x464.jpg" alt="" width="440px">
+                <h1>FOOD</h1>
+                <h2>Moroccan Salmon with Garlic Mayonnaise is Common in Southern Spain</h2>
+        
+              
+            </div>
+            <div class="food-ready">
+               
+                
+                <img src="https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/42-696x493.jpg" alt="">
+                <h1>FOOD</h1>
+                <h2>Best Places to Get Your Mexican Food Fix When You Visit Mexico City</h2>
+        
+              
+            </div>
+            <div class="food-ready">
+               
+                <img src="https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/41-696x484.jpg" alt="">
+                <h1>FOOD</h1>
+                <h2><small class="small-letter">EXCLUSIVE</small>The Best Pork Kebabs With Grilled Plums and Couscous is Found in Poland.</h2>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="newspaper">
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            const hamburger = document.querySelector('.hanbugar');
+           const mobileMenu = document.querySelector(".mobile-menu");
+           const icons = document.querySelectorAll("i");
+    
+           hamburger.addEventListener("click", function (event) {
+               const isVisible = mobileMenu.getAttribute('data-visible');
+               if (isVisible == "true") {
+                   // qari hiding
+                   mobileMenu.setAttribute('data-visible', "false");
+                   icons[0].setAttribute('data-visible', "true");
+                   icons[1].setAttribute('data-visible', "false");
+               } else if (isVisible == "false") {
+                   // soo bandhig showing
+                   mobileMenu.setAttribute('data-visible', "true");
+                   icons[0].setAttribute('data-visible', "false");
+                   icons[1].setAttribute('data-visible', "true");
+               }
+           });
+     </script>
+</body>
+</html>

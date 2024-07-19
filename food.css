@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* header */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+  
+}
+.container{
+    max-width:1200px;
+    margin-inline: auto;
+}
+/* START STYLE GENERALLY*/
+small{
+    background-color: #309b65;
+    color: #fff;
+    padding: 2px 5px;
+    font-family: "Roboto", sans-serif;
+ }
+ /* END STYLE GENERALLY*/
+
+
+
+ /* START STYLE    NAV*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #d2cece;
+    /* padding:-6px; */
+}
+
+.links-menu , .menu ,.logo{
+    border-right: 0.5px solid #d2cece;
+    padding-right:10px ;
+}
+.logo{
+    display: flex;
+    gap: 10px;
+    
+}
+.logo-right{
+    font-size: 1rem;
+}
+.logo .logo-left{
+    text-transform: uppercase;
+    font-size: 3.375rem;
+      font-family: "EB Garamond", serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(48,155,101);
+}
+.logo .logo-right{
+ /* margin-left: 1rem; */
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.logo .logo-right #news{
+    border-bottom: 1px solid black;
+}
+.links-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links-menu li{
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding:31px;
+}
+.links-menu li i{
+    color: rgb(48,155,101);
+    width: 19px;
+     font-size:20px;
+}
+.links-menu li a{
+    color: #000;
+    text-decoration: none;
+}
+.links-menu li a:hover{
+    color: rgb(48,155,101);
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+}
+#active{
+    color: rgb(48,155,101);
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul li{
+    padding: 31px;
+    list-style: none;
+}
+ul li i{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+ul li  a{
+    color: #000;
+    text-decoration: none;
+}
+ul li button{
+    background-color: RGB(77 178 236);
+    color: #fff;
+    padding:10px;
+    border: none;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.hanbugar{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+/* END STYLE NAV*/
+
+
+/* START STYLE Header */
+header{
+    display: flex;
+     margin:20px 0;
+     }
+header h4{
+    color:#309b65;
+}
+header p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+.logo .logo-right{
+    /* margin-left: 1rem; */
+    display: flex;
+     /* align-items: center;
+     justify-content: center; */
+     flex-direction: column;
+     font-size: 0.875rem;
+     font-weight: 500;
+   }
+header p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+.contain{
+    max-width:1600px;
+    margin-inline: auto;
+   
+
+}
+
+
+/* foood header */
+.food-header{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    border-bottom: 1px solid black;
+    margin-top: 4rem;
+}
+
+.headertype h1{
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-family:"EB Garamond" ;
+    font-size: 3.4rem;
+    color: rgb(0, 0, 0);
+}
+.header-menu{
+    display: flex;
+    justify-content: flex-end;
+   
+}
+.header-menu li{
+    padding: 10px;
+}
+.header-menu li a{
+    color: #0de065;
+    font-size: 1.2rem;
+
+}
+
+.header-menu li a {
+    color: rgb(76, 181, 119);
+}
+
+/* food Header */
+
+.foods{
+    margin-top: 1.1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    
+
+}
+
+.left-food h1{
+    margin-top: -2rem;
+}
+.left-food .food-ready {
+    line-height: 1.85rem;
+}
+.simple-food{
+    background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)),
+    url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/45-1068x712.jpg")center/cover;
+    width: 100%;
+    height: 820px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    padding: 40px 20px;
+   
+   
+}
+
+.left-food, .right-food{
+    margin-top: 1.5rem;
+}
+.simple-food h1{
+   margin: 10px 0px;
+   color: rgb(76, 181, 119);
+   font-family:Roboto ;
+   font-size:0.9rem ;
+   font-weight: 500;
+   /* background-color: white; */
+  
+
+   
+}
+.description h2{
+   
+}
+.profile{
+   
+}
+.simple-food p{
+    font-size: 1.35rem;
+}
+.simple-food h2{
+
+    font-size: 2.9rem;
+    line-height: 3.3rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 3rem;
+}
+
+.simple-food p{
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    line-height: 19px;
+    margin-top: 0.8rem;
+}
+.food-ready h1{
+    color: rgb(76, 181, 119);
+    font-family:Roboto ;
+    font-size:1rem ;
+    font-weight: 700;
+}
+
+.food-ready h2{
+    color: black;
+    font-family:"EB Garamond";
+    font-size:1.65rem ;
+    font-weight: 600;
+
+}
+.food-ready h2:hover{
+    color: 
+    rgb(76, 181, 119);
+}
+.simple-food{
+    line-height: 1.75rem;
+}
+
+
+.right-food{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    
+
+}
+
+
+.right-food .food-ready img{
+    width: 440px;
+    height: 285px;
+}
+
+/* .simple-food img{
+    width: 100%;
+    height: 780px;
+} */
+
+.right-letter h1{
+    text-align: center;
+    color:#999999;
+}
+small{
+    background-color: #309b65;
+    color: #fff;
+    padding: 2px 2px;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.6rem;
+ }
+ .small-letter{
+    font-size: 1.23rem;
+    
+
+ }
+
+
+ /* section backround newspaper */
+
+ .newspaper{
+    width: 980px;
+    margin-inline: auto;
+   
+    
+   height: 240px;
+    /* gap: 60px; */
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    background: url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/recl-content.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+   
+    /* padding: 20px 80px; */
+}
+
+@media (max-width:640px){
+    /* header */
+
+    .menu{
+        display: none;
+    }
+    .hanbugar{
+        display: block;
+              top:30px;
+            right:0;
+            z-index:100;
+        color: #0de065;
+     position: absolute;
+        border-radius: 50%;
+        width:20px;
+        height:20px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+       padding: 10px;
+     font-size:2.5rem;
+     padding: 30px;
+     
+    }
+
+    .mobile-menu{
+        display: none;
+    }
+    .mobile-menu[data-visible="false"]{
+        transform: translateX(100%);
+    }
+    .hanbugar i[data-visible="true"]{
+        display: block;
+    }
+    .hanbugar i[data-visible="false"]{
+        display:none;
+    }
+    .logo{
+        padding: 20px;
+        
+    }
+    .links-menu , .menu ,.logo{
+        border-right: none;
+        padding-right:10px ;
+    }
+    header{
+        /* padding:20px;
+        max-width:600px;
+        box-sizing: border-box; */
+      
+    }
+   
+    .mobile-menu{
+             display: flex;
+        justify-content: center;
+     position:fixed;
+        background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+        url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/38.jpg")center/cover,no-repeat;
+        width:100%;
+        height:100vh;
+         inset: 0 0 0 0;              
+        color: #fff;   
+        transform: translateX(0%);
+        transition: transform ease-out 3s;
+        flex-direction: column;
+    
+    }
+    
+    .mobile-menu {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+    }
+    .mobile-menu a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+        margin: 10px 0;
+        cursor: pointer;
+        
+    }
+    .mobile-menu a i{
+  
+        padding: 10px;
+    }
+    .mobile-menu a button{
+        background-color: RGB(77 178 236);
+        color: #fff;
+        padding:10px;
+        border: none;
+        font-size: 0.75rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .mobile-menu  a:hover{
+        color: rgb(48,155,101);
+
+    }
+    header{
+        padding: 20px;
+    }
+    #active{
+        color: rgb(48,155,101);
+    }
+
+
+    /* food header */
+
+    
+    .header-menu{
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .headertype h1{
+        margin-left: 10px;
+        font-size:1.75rem;
+        font-weight: bold;
+       
+       
+        
+       
+        
+       
+    }
+    .headertype{
+        border-bottom: 1px solid black;
+    }
+    .food-header{
+        display: grid;
+        grid-template-columns: 1fr;
+        border-bottom: none;
+        margin-top: 1.75rem;
+        
+    }
+
+
+    .header-menu{
+        margin-top: 1rem;
+    }
+    .header-menu li{
+        /* border-bottom: none; */
+        padding: 7px;
+    }
+    .header-menu li a{
+        /* border-bottom: none; */
+       font-size: 1rem;
+       font-weight: bold;
+    }
+
+
+    /* foods */
+    
+    .foods{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    .right-food{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .simple-food img{
+        width: 100%;
+    }
+
+    .simple-food h2{
+        font-size: 1.975rem;
+        line-height: 2.425rem;
+
+    }
+    
+
+    /* section backround newspaper */
+    .newspaper{
+        width: 400px;
+        height: 200px;
+        /* margin-inline: auto; */
+        padding: 140px 140px;
+        margin-left: 20px;
+        background-size: contain;
+        margin-top: 0px;
+    }
+
+  
+
+
+}
+
+
+@media screen and (min-width:641px) and (max-width:770px){
+    /* header */
+    .menu{
+        display: none;
+    }
+    .hanbugar{
+        display: block;
+              top:30px;
+            right:0;
+            z-index:100;
+        color: #0de065;
+     position: absolute;
+        border-radius: 50%;
+        width:20px;
+        height:20px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+       padding: 10px;
+     font-size:2.5rem;
+     padding: 30px;
+     
+    }
+    .mobile-menu{
+        display: none;
+    }
+    .mobile-menu[data-visible="false"]{
+        transform: translateX(100%);
+    }
+    .hanbugar i[data-visible="true"]{
+        display: block;
+    }
+    .links-menu , .menu ,.logo{
+        border-right: none;
+        padding-right:10px ;
+    }
+    .hanbugar i[data-visible="false"]{
+        display:none;
+    }
+    .logo{
+        padding: 20px;
+        
+    }
+    header{
+        /* padding:20px;
+        max-width:600px;
+        box-sizing: border-box; */
+      
+    }
+    .mobile-menu{
+             display: flex;
+        justify-content: center;
+     position:fixed;
+        background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+        url("https://demo.tagdiv.com/newspaper_publication_pro/wp-content/uploads/2021/11/38.jpg")center/cover,no-repeat;
+        width:100%;
+        height:100vh;
+         inset: 0 0 0 0;              
+        color: #fff;   
+        transform: translateX(0%);
+        transition: transform ease-out 3s;
+        flex-direction: column;
+    
+    }
+    
+    .mobile-menu {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+    }
+    .mobile-menu a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+        margin: 10px 0;
+        cursor: pointer;
+        
+    }
+    .mobile-menu a i{
+    
+        padding: 10px;
+    }
+    .mobile-menu a button{
+        background-color: RGB(77 178 236);
+        color: #fff;
+        padding:10px;
+        border: none;
+        font-size: 0.75rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .mobile-menu  a:hover{
+        color: rgb(48,155,101);
+    
+    }
+    header{
+        padding: 20px;
+    }
+    #active{
+        color: rgb(48,155,101);
+    }
+
+
+    
+    /* food header */
+
+    
+    .header-menu{
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+  
+    .headertype h1{
+        margin-left: 10px;
+        font-size:1.75rem;
+        font-weight: bold;
+     
+    }
+    .headertype{
+        border-bottom: 1px solid black;
+    }
+    .food-header{
+        display: grid;
+        grid-template-columns: 1fr;
+        border-bottom: none;
+        margin-top: 1.75rem;
+        
+    }
+
+
+    .header-menu{
+        margin-top: 1rem;
+    }
+    .header-menu li{
+        /* border-bottom: none; */
+        padding: 7px;
+        
+    }
+    .header-menu li a{
+        /* border-bottom: none; */
+       font-size: 1rem;
+       font-weight: bold;
+    }
+
+  
+      /* foods */
+    
+      .foods{
+        display: grid;
+        grid-template-columns: 1fr;
+       
+
+    }
+    .right-food{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-inline: auto;
+       
+    }
+    .simple-food img{
+        width: 100%;
+    }
+    .simple-food h2{
+        font-size: 1.875rem;
+
+    }
+
+       /* section backround newspaper */
+       .newspaper{
+        width: 400px;
+        height: 200px;
+        /* margin-inline: auto; */
+        padding: 140px 140px;
+        margin-left: 20px;
+        background-size: contain;
+    }
+
+
+   
+
+}
